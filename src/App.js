@@ -1,17 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Тренировка перебора
-        </p>
+import Body from './components/Body'
+import Footer from './components/Footer'
+import MainMenu from './components/MainMenu'
 
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <MainMenu/>
+    <Body />
+    <Footer />
+  </div>
+)
 
 export default App;
