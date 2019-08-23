@@ -6,10 +6,10 @@ import MainMenu from './components/MainMenu'
 
 const App = () => (
   <div>
-    <MainMenu/>
+    <MainMenu />
     <Body />
     <Footer />
   </div>
 )
 
-export default App;
+export default App
