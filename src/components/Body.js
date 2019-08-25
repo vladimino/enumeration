@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CategoryList from './CategoryList/CategoryList'
-import DisclaimerMessage from '../DisclaimerMessage';
+import DisclaimerMessage from './DisclaimerMessage';
 import PropTypes from 'prop-types'
 import {
   Container,

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Cookies from 'js-cookie'
 import {
   Button,
   Icon,
@@ -7,7 +8,30 @@ import {
 } from 'semantic-ui-react'
 
 class DisclaimerMessage extends React.Component {
+  state = {
+    showMessage: true
+  }
+
+  componentDidMount(){
+    if (Cookies.get('hide_disclaimer')) {
+      this.setState({
+        showMessage: false
+      })
+    }
+  }
+
+  okButtonOnClickHandler = () => {
+    Cookies.set('hide_disclaimer', true)
+    this.setState({
+      showMessage: false
+    })
+  }
+
   render() {
+    if (!this.state.showMessage) {
+      return null
+    }
+
     return (
       <Message info icon>
         <Icon name='info' />
@@ -19,7 +43,14 @@ class DisclaimerMessage extends React.Component {
           <div style={{paddingTop: '1em'}}>
             Для новичков в этом деле: <a href='/what'>Что такое перебор в ЧГК.</a>.
           </div>
-          <Button style={{marginTop: '1em'}} positive floated='right'>Я понял, спасибо</Button>
+          <Button
+            style={{marginTop: '1em'}}
+            positive
+            floated='right'
+            onClick={this.okButtonOnClickHandler}
+          >
+            Я понял, спасибо
+          </Button>
         </Message.Content>
       </Message>
     )
