@@ -39,7 +39,7 @@ class DisclaimerMessage extends React.Component {
           </div>
           <div style={{paddingTop: '1em'}}>
             Для новичков в этом деле:{' '}
-            <a href='/what'>Что такое перебор в ЧГК.</a>.
+            <a href='/rules#what'>Что такое перебор в ЧГК.</a>.
           </div>
           <Button
             style={{marginTop: '1em'}}

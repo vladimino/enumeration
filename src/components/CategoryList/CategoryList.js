@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CategoryButtonGroup from './CategoryButtonGroup'
+import CategoryCardGroup from './CategoryCardGroup'
 import PropTypes from 'prop-types'
 
 class CategoryList extends React.Component {
@@ -9,10 +9,13 @@ class CategoryList extends React.Component {
       <>
         <p>
           Выберите интересующую категорию из верхнего меню или кликните по одной
-          из кнопок ниже.
+          из списка ниже.
         </p>
         <div>
-          <CategoryButtonGroup categories={this.props.categories} />
+          <CategoryCardGroup
+            categories={this.props.categories}
+            isLoaded={this.props.isLoaded}
+          />
         </div>
       </>
     )
@@ -21,6 +24,7 @@ class CategoryList extends React.Component {
 
 CategoryList.propTypes = {
   categories: PropTypes.arrayOf(PropTypes.object),
+  isLoaded: PropTypes.bool.isRequired,
 }
 
 export default CategoryList

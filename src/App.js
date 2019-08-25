@@ -9,6 +9,7 @@ class App extends React.Component {
   dataUrl = '../data/categories.json'
   state = {
     categories: [],
+    isLoaded: false,
   }
 
   componentDidMount() {
@@ -16,13 +17,17 @@ class App extends React.Component {
       .get(this.dataUrl)
       .then(res => this.setState({categories: res.data}))
       .catch(error => console.error(error))
+      .finally(() => this.setState({isLoaded: true}))
   }
 
   render() {
     return (
       <div>
         <MainMenu categories={this.state.categories} />
-        <Body categories={this.state.categories} />
+        <Body
+          categories={this.state.categories}
+          isLoaded={this.state.isLoaded}
+        />
         <Footer />
       </div>
     )
