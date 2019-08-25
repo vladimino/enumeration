@@ -1,12 +1,9 @@
 import React from 'react'
 
 import CategoryList from './CategoryList/CategoryList'
-import DisclaimerMessage from './DisclaimerMessage';
+import DisclaimerMessage from './DisclaimerMessage'
 import PropTypes from 'prop-types'
-import {
-  Container,
-  Header,
-} from 'semantic-ui-react'
+import {Container, Header} from 'semantic-ui-react'
 
 class Body extends React.Component {
   render() {
@@ -21,7 +18,7 @@ class Body extends React.Component {
 }
 
 Body.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.object).isRequired
+  categories: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default Body

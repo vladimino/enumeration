@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import MainMenu from './components/MainMenu'
 
 class App extends React.Component {
-  render() { 
+  render() {
     const categories = [
       {
         name: 'Категория 1',
@@ -56,7 +56,7 @@ class App extends React.Component {
         link: '/category/12',
       },
     ]
-    
+
     return (
       <div>
         <MainMenu categories={categories} />

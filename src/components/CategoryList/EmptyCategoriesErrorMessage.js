@@ -1,9 +1,6 @@
 import React from 'react'
 
-import {
-    Icon,
-    Message,
-} from 'semantic-ui-react'
+import {Icon, Message} from 'semantic-ui-react'
 
 const EmptyCategoriesErrorMessage = () => (
   <Message error icon>
