@@ -16,7 +16,7 @@ class DisclaimerMessage extends React.Component {
     }
   }
 
-  okButtonOnClickHandler = () => {
+  handleClick = () => {
     Cookies.set('hide_disclaimer', true)
     this.setState({
       showMessage: false,
@@ -45,7 +45,7 @@ class DisclaimerMessage extends React.Component {
             style={{marginTop: '1em'}}
             positive
             floated='right'
-            onClick={this.okButtonOnClickHandler}
+            onClick={this.handleClick}
           >
             Я понял, спасибо
           </Button>
