@@ -19,7 +19,7 @@ class CategoryCard extends React.Component {
         </Card.Content>
         <Card.Content extra>
           <div>
-            <Button basic color='blue' as='a' href={category.link}>
+            <Button basic color='blue' as='a' href={process.env.PUBLIC_URL + category.link}>
               Выбрать тему
             </Button>
           </div>

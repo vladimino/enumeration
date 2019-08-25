@@ -8,7 +8,7 @@ const Footer = () => (
     style={{margin: '5em 0em 0em', padding: '3em 0em'}}
   >
     <Container textAlign='center'>
-      <Image centered size='mini' src='/logo.png' />
+      <Image centered size='mini' src={process.env.PUBLIC_URL + '/logo.png'} />
       <List horizontal inverted divided link size='small'>
         <List.Item>&copy; Владимир Белокур aka vladimino, 2019</List.Item>
       </List>

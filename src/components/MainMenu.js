@@ -8,7 +8,7 @@ class MainMenu extends React.Component {
     const categoriesList = !this.props.categories
       ? null
       : this.props.categories.map((category, index) => (
-          <Dropdown.Item as='a' href={category.link} key={index}>
+          <Dropdown.Item as='a' href={process.env.PUBLIC_URL + category.link} key={index}>
             <Icon name={category.icon} size='mini' />
             <span className='text'>{category.name}</span>
           </Dropdown.Item>
@@ -17,12 +17,12 @@ class MainMenu extends React.Component {
     return (
       <Menu fixed='top' inverted>
         <Container>
-          <Menu.Item as='a' href='/' header>
-            <Image size='mini' src='/logo.png' style={{marginRight: '1.5em'}} />
+          <Menu.Item as='a' href={process.env.PUBLIC_URL} header>
+            <Image size='mini' src={process.env.PUBLIC_URL + '/logo.png'} style={{marginRight: '1.5em'}} />
             Главная
           </Menu.Item>
 
-          <Menu.Item as='a' href='/rules'>
+          <Menu.Item as='a' href={process.env.PUBLIC_URL + '/rules'}>
             Правила
           </Menu.Item>
 

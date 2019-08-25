@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import MainMenu from './components/MainMenu'
 
 class App extends React.Component {
-  dataUrl = '../data/categories.json'
+  dataUrl = process.env.PUBLIC_URL + '/data/categories.json'
   state = {
     categories: [],
     isLoaded: false,
