@@ -1,0 +1,30 @@
+[
+  {
+    "name": "География",
+    "link": "/category/geo",
+    "icon": "globe",
+    "description": "Города, страны, народы",
+    "subjects": 2
+  },
+  {
+    "name": "Спорт",
+    "link": "/category/sport",
+    "icon": "soccer",
+    "description": "Соревнования, спортсмены, достижения",
+    "subjects": 5
+  },
+  {
+    "name": "История",
+    "link": "/category/history",
+    "icon": "history",
+    "description": "Правители, события",
+    "subjects": 10
+  },
+  {
+    "name": "Наука",
+    "link": "/category/science",
+    "icon": "lab",
+    "description": "Ученые, законы, открытия, термины",
+    "subjects": 8
+  }
+]
