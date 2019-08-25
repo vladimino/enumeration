@@ -1,7 +1,9 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import {Button, Card, Icon} from 'semantic-ui-react'
+import {Card, Icon} from 'semantic-ui-react'
+
+import './Card.css'
 
 class CategoryCard extends React.Component {
   render() {
@@ -12,17 +14,10 @@ class CategoryCard extends React.Component {
         <Card.Content>
           <Card.Header>
             <Icon name={category.icon} size='small' />
-            {category.name}
+            <a href={process.env.PUBLIC_URL + category.link}>{category.name}</a>
           </Card.Header>
           <Card.Description>{category.description}</Card.Description>
           <Card.Meta>{category.subjects} тем</Card.Meta>
-        </Card.Content>
-        <Card.Content extra>
-          <div>
-            <Button basic color='blue' as='a' href={process.env.PUBLIC_URL + category.link}>
-              Выбрать тему
-            </Button>
-          </div>
         </Card.Content>
       </Card>
     )
