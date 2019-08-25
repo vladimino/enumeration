@@ -25,7 +25,7 @@ class CategoryButtonGroup extends React.Component {
   }
 
   render() {
-    if (this.props.categories.length === 0) {
+    if (!this.props.categories || this.props.categories.length === 0) {
       return <EmptyCategoriesErrorMessage />
     }
 
@@ -47,7 +47,7 @@ class CategoryButtonGroup extends React.Component {
 }
 
 CategoryButtonGroup.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  categories: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default CategoryButtonGroup

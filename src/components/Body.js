@@ -18,7 +18,7 @@ class Body extends React.Component {
 }
 
 Body.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  categories: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Body

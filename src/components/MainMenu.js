@@ -5,11 +5,13 @@ import {Container, Menu, Image, Dropdown} from 'semantic-ui-react'
 
 class MainMenu extends React.Component {
   render() {
-    const categoriesList = this.props.categories.map((category, index) => (
-      <Dropdown.Item as='a' href={category.link} key={index}>
-        <span className='text'>{category.name}</span>
-      </Dropdown.Item>
-    ))
+    const categoriesList = !this.props.categories
+      ? null
+      : this.props.categories.map((category, index) => (
+          <Dropdown.Item as='a' href={category.link} key={index}>
+            <span className='text'>{category.name}</span>
+          </Dropdown.Item>
+        ))
 
     return (
       <Menu fixed='top' inverted>
@@ -22,6 +24,10 @@ class MainMenu extends React.Component {
           <Dropdown item simple text='Категории'>
             <Dropdown.Menu>{categoriesList}</Dropdown.Menu>
           </Dropdown>
+
+          <Menu.Item as='a' href='/what'>
+            Что такое перебор
+          </Menu.Item>
         </Container>
       </Menu>
     )
@@ -29,7 +35,7 @@ class MainMenu extends React.Component {
 }
 
 MainMenu.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  categories: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default MainMenu
