@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {BrowserRouter as Router} from 'react-router-dom'
 import axios from 'axios'
 import Body from './components/Body'
 import Footer from './components/Footer'
@@ -23,12 +23,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <MainMenu categories={this.state.categories} />
-        <Body
-          categories={this.state.categories}
-          isLoaded={this.state.isLoaded}
-        />
-        <Footer />
+        <Router>
+          <MainMenu categories={this.state.categories} />
+          <Body
+            categories={this.state.categories}
+            isLoaded={this.state.isLoaded}
+          />
+          <Footer />
+        </Router>
       </div>
     )
   }

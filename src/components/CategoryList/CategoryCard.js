@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {Card, Icon} from 'semantic-ui-react'
 
@@ -14,7 +14,7 @@ class CategoryCard extends React.Component {
         <Card.Content>
           <Card.Header>
             <Icon name={category.icon} size='small' />
-            <a href={process.env.PUBLIC_URL + category.link}>{category.name}</a>
+            <Link to={category.link}>{category.name}</Link>
           </Card.Header>
           <Card.Description>{category.description}</Card.Description>
           <Card.Meta>{category.subjects} тем</Card.Meta>
