@@ -50,9 +50,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,json,md}": [
-      "npm run prettier",
-      "git add"
+    "*": [
+      "npm run prettier"
     ]
   }
 }
