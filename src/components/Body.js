@@ -1,5 +1,6 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
+import Category from './Category/Category'
 import CategoryList from './CategoryList/CategoryList'
 import NotFound from './NotFound'
 import PropTypes from 'prop-types'
@@ -22,6 +23,7 @@ class Body extends React.Component {
             )}
           />
           <Route path='/rules' component={Rules} />
+          <Route path='/category/:slug' component={Category} />
           <Route component={NotFound} />
         </Switch>
       </Container>
