@@ -6,10 +6,6 @@ import {Card, Icon} from 'semantic-ui-react'
 import './Card.css'
 
 class CategoryCard extends React.Component {
-  handleClick = (e) => {
-    console.log(e)
-  }
-
   render() {
     const category = this.props.category
 

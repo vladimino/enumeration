@@ -24,16 +24,17 @@ class Category extends React.Component {
     this.resetState()
 
     axios
-    .get(this.dataUrl + slug + '.json')
-    .then(res => this.setState({category: res.data}))
-    .catch(error => console.error(error))
-    .finally(() => this.setState({isLoaded: true}))
+      .get(this.dataUrl + slug + '.json')
+      .then(res => this.setState({category: res.data}))
+      .catch(error => console.error(error))
+      .finally(() => this.setState({isLoaded: true}))
   }
 
-  resetState = () => this.setState({
-    category: null,
-    isLoaded: false,
-  })
+  resetState = () =>
+    this.setState({
+      category: null,
+      isLoaded: false,
+    })
 
   render() {
     if (!this.state.isLoaded) {
@@ -51,16 +52,10 @@ class Category extends React.Component {
         <Header as='h1' icon>
           <Icon name={category.icon} />
           Категория {category.name} ({category.subjects})
-          <Header.Subheader>
-            {category.description}
-          </Header.Subheader>
+          <Header.Subheader>{category.description}</Header.Subheader>
         </Header>
-        <p>
-          Выберите тему из списка ниже.
-        </p>
-        <div>
-          А Б В
-        </div>
+        <p>Выберите тему из списка ниже.</p>
+        <div>А Б В</div>
       </>
     )
   }
