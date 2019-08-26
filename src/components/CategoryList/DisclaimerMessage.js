@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import {Button, Icon, Message} from 'semantic-ui-react'
 
@@ -39,7 +39,7 @@ class DisclaimerMessage extends React.Component {
           </div>
           <div style={{paddingTop: '1em'}}>
             Для новичков в этом деле:{' '}
-            <a href='/rules#what'>Что такое перебор в ЧГК.</a>.
+            <Link to='/rules#what'>Что такое перебор в ЧГК.</Link>.
           </div>
           <Button
             style={{marginTop: '1em'}}

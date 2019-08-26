@@ -23,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router basename='/enumeration'>
           <MainMenu categories={this.state.categories} />
           <Body
             categories={this.state.categories}

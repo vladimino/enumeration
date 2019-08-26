@@ -31,7 +31,7 @@ class MainMenu extends React.Component {
           </Menu.Item>
 
           <Menu.Item>
-            <Link to='/rules/'>Правила</Link>
+            <Link to='/rules'>Правила</Link>
           </Menu.Item>
 
           <Dropdown item simple text='Категории'>
