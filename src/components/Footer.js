@@ -10,7 +10,7 @@ const Footer = () => (
     <Container textAlign='center'>
       <Image centered size='mini' src={process.env.PUBLIC_URL + '/logo.png'} />
       <List horizontal inverted divided link size='small'>
-        <List.Item>&copy; Владимир Белокур aka vladimino, 2019</List.Item>
+        <List.Item>&copy; Владимир Белокур aka vladimino, 2021</List.Item>
       </List>
     </Container>
   </Segment>
