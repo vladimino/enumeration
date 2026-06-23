@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import Category from './Category/Category'
 import CategoryList from './CategoryList/CategoryList'
 import NotFound from './NotFound'
@@ -11,21 +11,20 @@ class Body extends React.Component {
   render() {
     return (
       <Container text style={{marginTop: '7em', minHeight: '350px'}}>
-        <Switch>
+        <Routes>
           <Route
-            exact
             path='/'
-            render={() => (
+            element={
               <CategoryList
                 categories={this.props.categories}
                 isLoaded={this.props.isLoaded}
               />
-            )}
+            }
           />
-          <Route path='/rules' component={Rules} />
-          <Route path='/category/:slug' component={Category} />
-          <Route component={NotFound} />
-        </Switch>
+          <Route path='/rules' element={<Rules />} />
+          <Route path='/category/:slug' element={<Category />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
       </Container>
     )
   }

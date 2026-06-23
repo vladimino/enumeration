@@ -1,8 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+import {useParams} from 'react-router-dom'
 import {Header, Icon} from 'semantic-ui-react'
 
-class Category extends React.Component {
+class CategoryView extends React.Component {
   dataUrl = process.env.PUBLIC_URL + '/data/categories/'
   state = {
     category: null,
@@ -14,19 +15,19 @@ class Category extends React.Component {
   componentWillUnmount = () => this.resetState()
 
   componentDidUpdate(prevProps) {
-    if (this.props.match.params.slug !== prevProps.match.params.slug) {
+    if (this.props.slug !== prevProps.slug) {
       this.fetchCategoryData()
     }
   }
 
   fetchCategoryData() {
-    const slug = this.props.match.params.slug
+    const slug = this.props.slug
     this.resetState()
 
     axios
       .get(this.dataUrl + slug + '.json')
-      .then(res => this.setState({category: res.data}))
-      .catch(error => console.error(error))
+      .then((res) => this.setState({category: res.data}))
+      .catch((error) => console.error(error))
       .finally(() => this.setState({isLoaded: true}))
   }
 
@@ -59,6 +60,11 @@ class Category extends React.Component {
       </>
     )
   }
+}
+
+const Category = () => {
+  const {slug} = useParams()
+  return <CategoryView slug={slug} />
 }
 
 export default Category
