@@ -1,19 +1,17 @@
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
 import {useParams} from 'react-router-dom'
-import Icon from '../ui/Icon'
-import {
-  categoryPath,
-  findCategoryBySlug,
-  listCountLabel,
-  listPath,
-} from '../../lib/categories'
+import {useProfile} from '../../context/ProfileContext'
+import {findCategoryBySlug, listCountLabel} from '../../lib/categories'
+import ListCard from './ListCard'
+
+import './Category.css'
 
 const Category = ({categories, isLoaded}) => {
   const {slug} = useParams()
+  const {profile} = useProfile()
   const category = findCategoryBySlug(categories, slug)
 
-  if (!isLoaded) {
+  if (!isLoaded || !profile) {
     return <div>Loading...</div>
   }
 
@@ -25,37 +23,32 @@ const Category = ({categories, isLoaded}) => {
   const listLabel = listCountLabel(lists.length)
 
   return (
-    <>
-      <h1 className='ui icon header'>
-        <Icon name={category.icon} />
-        <div className='content'>
-          Категория {category.name} ({listLabel})
-          <div className='sub header'>{category.description}</div>
-        </div>
-      </h1>
-      <p>Выбери список для тренировки:</p>
+    <div className='category-page'>
+      <header className='category-page__header'>
+        <h1 className='ui header category-page__title'>{category.name}</h1>
+        {category.description && (
+          <p className='category-page__description'>{category.description}</p>
+        )}
+        <span className='ui label category-page__count'>{listLabel}</span>
+      </header>
 
       {lists.length === 0 ? (
         <div className='ui message'>
           <p>Списки для этой категории скоро появятся.</p>
         </div>
       ) : (
-        <div className='ui relaxed divided list'>
+        <div className='ui three stackable cards category-page__lists'>
           {lists.map((list) => (
-            <div className='item' key={list.slug}>
-              <div className='content'>
-                <div className='header'>
-                  <Link to={listPath(slug, list.slug)}>{list.name}</Link>
-                </div>
-                {list.description && (
-                  <div className='description'>{list.description}</div>
-                )}
-              </div>
-            </div>
+            <ListCard
+              key={list.slug}
+              list={list}
+              categorySlug={slug}
+              profile={profile}
+            />
           ))}
         </div>
       )}
-    </>
+    </div>
   )
 }
 

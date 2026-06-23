@@ -49,24 +49,28 @@
       "slug": "olympic-capitals",
       "name": "Города — организаторы Олимпийских игр",
       "description": "Города, в которых проходили летние и зимние Олимпийские игры",
+      "size": 43,
       "categories": ["geo", "sport", "history"]
     },
     {
       "slug": "constellations",
       "name": "Созвездия",
-      "description": "Все 88 официальных созвездий северного и южного неба",
+      "description": "Все официальные созвездия северного и южного неба",
+      "size": 88,
       "categories": ["nature", "reference"]
     },
     {
       "slug": "nato-alphabet",
       "name": "Фонетический алфавит НАТО",
-      "description": "26 кодовых слов для обозначения букв латинского алфавита",
+      "description": "Кодовые слова для обозначения букв латинского алфавита",
+      "size": 26,
       "categories": ["reference"]
     },
     {
       "slug": "us-states",
       "name": "Штаты США",
-      "description": "Все 50 штатов Соединённых Штатов Америки",
+      "description": "Все штаты Соединённых Штатов Америки",
+      "size": 50,
       "categories": ["geo"]
     }
   ]

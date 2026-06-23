@@ -52,12 +52,6 @@ const MainMenu = ({categories}) => {
           </Link>
         </div>
 
-        <div className='item'>
-          <Link to='/rules' onClick={closeMenus}>
-            Правила
-          </Link>
-        </div>
-
         <div
           ref={dropdownRef}
           className={`ui dropdown item${categoriesOpen ? ' active' : ''}`}
@@ -68,6 +62,12 @@ const MainMenu = ({categories}) => {
           <div className='menu' onClick={(e) => e.stopPropagation()}>
             {categoriesList}
           </div>
+        </div>
+
+        <div className='item'>
+          <Link to='/rules' onClick={closeMenus}>
+            Правила
+          </Link>
         </div>
 
         <div className='right menu'>
