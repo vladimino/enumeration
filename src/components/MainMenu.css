@@ -1,0 +1,26 @@
+.main-menu .ui.dropdown.item {
+  position: relative;
+}
+
+.main-menu .ui.dropdown.item > .menu {
+  display: none;
+  margin-top: 0 !important;
+  z-index: 101;
+}
+
+.main-menu .ui.dropdown.item.active > .menu {
+  display: block !important;
+}
+
+.main-menu .ui.dropdown.item > .menu > .item {
+  padding: 0 !important;
+}
+
+.main-menu .ui.dropdown.item > .menu > .item > a {
+  display: block;
+  padding: 0.78571429em 1.14285714em;
+}
+
+.main-menu .ui.dropdown.item > .menu > .item > a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
