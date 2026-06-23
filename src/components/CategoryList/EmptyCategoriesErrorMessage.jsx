@@ -4,7 +4,7 @@ const EmptyCategoriesErrorMessage = () => (
   <div className='ui error icon message'>
     <Icon name='warning' />
     <div className='content'>
-      Ошибка загрузки категорий. Пожалуйста, сообщите разработчику.
+      Ошибка загрузки категорий. Сообщи разработчику, если проблема повторяется.
     </div>
   </div>
 )

@@ -75,3 +75,8 @@
   margin: 1em 0 0.5em;
   font-size: 1.1em;
 }
+
+.list-game__record {
+  margin: 0 0 1em;
+  color: rgba(0, 0, 0, 0.6);
+}

@@ -18,7 +18,7 @@ const Body = ({catalog, categories, isLoaded}) => (
         element={<CategoryList categories={categories} isLoaded={isLoaded} />}
       />
       <Route path='/rules' element={<Rules />} />
-      <Route path='/profile' element={<Profile />} />
+      <Route path='/profile' element={<Profile categories={categories} />} />
       <Route
         path='/category/:slug'
         element={<Category categories={categories} isLoaded={isLoaded} />}

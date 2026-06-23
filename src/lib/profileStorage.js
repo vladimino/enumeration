@@ -7,6 +7,7 @@ export const createEmptyProfile = (username = generateUsername()) => ({
   introduced: false,
   totalScore: 0,
   scoresByCategory: {},
+  listRecords: {},
   gameHistory: [],
 })
 

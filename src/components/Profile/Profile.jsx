@@ -1,12 +1,32 @@
-import {useState} from 'react'
+import {useMemo, useState} from 'react'
+import PropTypes from 'prop-types'
 import Icon from '../ui/Icon'
 import {useProfile} from '../../context/ProfileContext'
 import './Profile.css'
 
-const Profile = () => {
+const Profile = ({categories}) => {
   const {profile, setUsername} = useProfile()
   const [isEditing, setIsEditing] = useState(false)
   const [draftUsername, setDraftUsername] = useState('')
+
+  const categoryScores = useMemo(() => {
+    const namesBySlug = Object.fromEntries(
+      (categories ?? []).map((category) => [category.slug, category.name])
+    )
+
+    return Object.entries(profile?.scoresByCategory ?? {})
+      .map(([slug, score]) => ({
+        slug,
+        name: namesBySlug[slug] ?? slug,
+        score,
+      }))
+      .sort((a, b) => b.score - a.score)
+  }, [categories, profile?.scoresByCategory])
+
+  const gameHistory = useMemo(
+    () => [...(profile?.gameHistory ?? [])].reverse(),
+    [profile?.gameHistory]
+  )
 
   if (!profile) {
     return <div>Загрузка профиля...</div>
@@ -32,8 +52,6 @@ const Profile = () => {
     setIsEditing(false)
     setDraftUsername('')
   }
-
-  const categoryScores = Object.entries(profile.scoresByCategory ?? {})
 
   return (
     <div className='profile-page'>
@@ -88,7 +106,7 @@ const Profile = () => {
 
         {categoryScores.length === 0 ? (
           <p className='profile-page__empty'>
-            Пока нет очков по категориям. Пройдите первый список — результат
+            Пока нет очков по категориям. Пройди первый список — результат
             появится здесь.
           </p>
         ) : (
@@ -100,10 +118,10 @@ const Profile = () => {
               </tr>
             </thead>
             <tbody>
-              {categoryScores.map(([category, score]) => (
-                <tr key={category}>
-                  <td>{category}</td>
-                  <td>{score}</td>
+              {categoryScores.map((entry) => (
+                <tr key={entry.slug}>
+                  <td>{entry.name}</td>
+                  <td>{entry.score}</td>
                 </tr>
               ))}
             </tbody>
@@ -114,19 +132,21 @@ const Profile = () => {
       <div className='ui segment profile-page__section'>
         <h2 className='ui sub header'>История игр</h2>
 
-        {profile.gameHistory?.length ? (
+        {gameHistory.length ? (
           <table className='ui very basic table profile-page__table'>
             <thead>
               <tr>
                 <th>Дата</th>
+                <th>Категория</th>
                 <th>Список</th>
                 <th>Результат</th>
               </tr>
             </thead>
             <tbody>
-              {profile.gameHistory.map((entry, index) => (
-                <tr key={`${entry.playedAt}-${index}`}>
+              {gameHistory.map((entry, index) => (
+                <tr key={`${entry.playedAt}-${entry.listSlug}-${index}`}>
                   <td>{entry.playedAt}</td>
+                  <td>{entry.categoryName ?? entry.categorySlug}</td>
                   <td>{entry.listName}</td>
                   <td>{entry.score}</td>
                 </tr>
@@ -135,13 +155,17 @@ const Profile = () => {
           </table>
         ) : (
           <p className='profile-page__empty'>
-            История пуста. Здесь будут ваши попытки: дата, список и набранные
-            очки.
+            История пуста. Здесь будут твои попытки: дата, категория, список и
+            набранные очки.
           </p>
         )}
       </div>
     </div>
   )
+}
+
+Profile.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Profile

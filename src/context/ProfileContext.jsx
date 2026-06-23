@@ -11,6 +11,7 @@ import {
   saveProfile,
   updateUsername as persistUsername,
 } from '../lib/profileStorage'
+import {recordGameResult as persistGameResult} from '../lib/profileProgress'
 
 const ProfileContext = createContext(null)
 
@@ -27,6 +28,15 @@ export const ProfileProvider = ({children}) => {
 
   const completeIntroduction = useCallback((username) => {
     setProfile(persistIntroduction(username))
+  }, [])
+
+  const recordGameResult = useCallback((session, catalog) => {
+    setProfile((current) => {
+      const base = current ?? ensureProfile()
+      const nextProfile = persistGameResult(base, session, catalog)
+      saveProfile(nextProfile)
+      return nextProfile
+    })
   }, [])
 
   const refreshProfile = useCallback(() => {
@@ -48,6 +58,7 @@ export const ProfileProvider = ({children}) => {
         profile,
         setUsername,
         completeIntroduction,
+        recordGameResult,
         refreshProfile,
         patchProfile,
       }}

@@ -33,7 +33,7 @@ const Category = ({categories, isLoaded}) => {
           <div className='sub header'>{category.description}</div>
         </div>
       </h1>
-      <p>Выберите список для тренировки:</p>
+      <p>Выбери список для тренировки:</p>
 
       {lists.length === 0 ? (
         <div className='ui message'>

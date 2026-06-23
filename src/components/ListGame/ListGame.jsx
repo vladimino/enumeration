@@ -6,6 +6,7 @@ import {getListInCategory, loadFullList} from '../../lib/catalog'
 import {categoryPath, findCategoryBySlug} from '../../lib/categories'
 import {reviewAnswers} from '../../lib/answerMatching'
 import {hasIntroduced} from '../../lib/profileStorage'
+import {getListRecord} from '../../lib/profileProgress'
 import IntroduceModal from '../IntroduceModal/IntroduceModal'
 
 import './ListGame.css'
@@ -24,7 +25,7 @@ AnswerLabelsPanel.propTypes = {
 
 const ListGame = ({catalog, categories, isLoaded}) => {
   const {categorySlug, listSlug} = useParams()
-  const {profile, completeIntroduction} = useProfile()
+  const {profile, completeIntroduction, recordGameResult} = useProfile()
   const inputRef = useRef(null)
   const [list, setList] = useState(null)
   const [listError, setListError] = useState(false)
@@ -102,6 +103,9 @@ const ListGame = ({catalog, categories, isLoaded}) => {
     return <div>Loading...</div>
   }
 
+  const listTotal = list.answers?.length ?? 0
+  const listRecord = getListRecord(profile, listSlug)
+
   const addAnswer = () => {
     const value = draft.trim()
     if (!value) {
@@ -123,6 +127,18 @@ const ListGame = ({catalog, categories, isLoaded}) => {
     setReview(result)
     setShowMissed(false)
     setPhase('review')
+
+    recordGameResult(
+      {
+        categorySlug,
+        categoryName: category?.name ?? categorySlug,
+        listSlug,
+        listName: list.name,
+        score: result.score,
+        total: result.total,
+      },
+      catalog
+    )
   }
 
   const handlePlayAgain = () => {
@@ -143,11 +159,16 @@ const ListGame = ({catalog, categories, isLoaded}) => {
 
       <h1 className='ui header'>{list.name}</h1>
       {list.description && <p>{list.description}</p>}
+      {listRecord !== null && (
+        <p className='list-game__record'>
+          Твой текущий рекорд: <strong>{listRecord}</strong> из {listTotal}
+        </p>
+      )}
 
       {phase === 'playing' ? (
         <>
           {answers.length > 0 && (
-            <AnswerLabelsPanel title={`Ваши ответы (${answers.length})`}>
+            <AnswerLabelsPanel title={`Твои ответы (${answers.length})`}>
               {answers.map((answer, index) => (
                 <span
                   className='ui label list-game__label--pending'
@@ -165,7 +186,7 @@ const ListGame = ({catalog, categories, isLoaded}) => {
                 ref={inputRef}
                 type='text'
                 value={draft}
-                placeholder='Введите ответ'
+                placeholder='Введи ответ'
                 onChange={(event) => setDraft(event.target.value)}
               />
             </div>
@@ -190,7 +211,7 @@ const ListGame = ({catalog, categories, isLoaded}) => {
 
           {review.reviewed.length > 0 ? (
             <AnswerLabelsPanel
-              title={`Ваши ответы (${review.reviewed.length})`}
+              title={`Твои ответы (${review.reviewed.length})`}
             >
               {review.reviewed.map((item, index) => (
                 <span
@@ -202,7 +223,7 @@ const ListGame = ({catalog, categories, isLoaded}) => {
               ))}
             </AnswerLabelsPanel>
           ) : (
-            <p className='ui message'>Вы не ввели ни одного ответа.</p>
+            <p className='ui message'>Ты не ввёл ни одного ответа.</p>
           )}
 
           <div className='list-game__review-actions'>

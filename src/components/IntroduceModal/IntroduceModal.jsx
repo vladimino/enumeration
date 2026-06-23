@@ -20,10 +20,10 @@ const IntroduceModal = ({username, onSave}) => {
     >
       <div className='introduce-modal__dialog'>
         <div className='header' id='introduce-modal-title'>
-          Представьтесь
+          Представься
         </div>
         <p className='description'>
-          Перед первой игрой введите имя для профиля. Его можно сменить позже на
+          Перед первой игрой введи имя для профиля. Его можно сменить позже на
           странице профиля.
         </p>
         <form className='introduce-modal__form' onSubmit={handleSubmit}>
