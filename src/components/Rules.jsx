@@ -1,9 +1,8 @@
 import React from 'react'
-import {Header} from 'semantic-ui-react'
 
 const Rules = () => (
   <>
-    <Header as='h1'>Правила</Header>
+    <h1 className='ui header'>Правила</h1>
     <p>Играйте и выигрывайте!</p>
   </>
 )

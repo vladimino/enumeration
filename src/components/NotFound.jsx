@@ -1,14 +1,13 @@
 import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
-import {Header, HeaderSubheader} from 'semantic-ui-react'
 
 const NotFound = () => {
   const location = useLocation()
 
   return (
     <>
-      <Header as='h1'>404</Header>
-      <HeaderSubheader as='h3'>Страница не найдена</HeaderSubheader>
+      <h1 className='ui header'>404</h1>
+      <h3 className='ui sub header'>Страница не найдена</h3>
       <p>
         Хм, очень интересно, как Вы сюда попали... Если Вы все же убеждены, что
         страница <code>{location.pathname}</code> должна работать, пожалуйста,

@@ -5,12 +5,14 @@ import CategoryList from './CategoryList/CategoryList'
 import NotFound from './NotFound'
 import PropTypes from 'prop-types'
 import Rules from './Rules'
-import {Container} from 'semantic-ui-react'
 
 class Body extends React.Component {
   render() {
     return (
-      <Container text style={{marginTop: '7em', minHeight: '350px'}}>
+      <div
+        className='ui text container'
+        style={{marginTop: '7em', minHeight: '350px'}}
+      >
         <Routes>
           <Route
             path='/'
@@ -25,7 +27,7 @@ class Body extends React.Component {
           <Route path='/category/:slug' element={<Category />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </Container>
+      </div>
     )
   }
 }

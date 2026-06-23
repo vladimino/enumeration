@@ -1,44 +1,68 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
-import {Container, Menu, Image, Dropdown, Icon} from 'semantic-ui-react'
+import Icon from './ui/Icon'
 
 class MainMenu extends React.Component {
+  state = {
+    categoriesOpen: false,
+  }
+
+  toggleCategories = () => {
+    this.setState((state) => ({categoriesOpen: !state.categoriesOpen}))
+  }
+
+  closeCategories = () => {
+    this.setState({categoriesOpen: false})
+  }
+
   render() {
     const categoriesList = !this.props.categories
       ? null
       : this.props.categories.map((category, index) => (
-          <Dropdown.Item key={index}>
+          <div className='item' key={index} onClick={this.closeCategories}>
             <Link to={category.link} style={{color: '#000'}}>
               <Icon name={category.icon} size='mini' />
               <span className='text'>{category.name}</span>
             </Link>
-          </Dropdown.Item>
+          </div>
         ))
 
+    const dropdownClassName = [
+      'ui',
+      'dropdown',
+      'item',
+      this.state.categoriesOpen ? 'active visible' : '',
+    ]
+      .filter(Boolean)
+      .join(' ')
+
     return (
-      <Menu fixed='top' inverted>
-        <Container>
-          <Menu.Item header>
+      <div className='ui fixed top inverted menu'>
+        <div className='ui container'>
+          <div className='header item'>
             <Link to='/'>
-              <Image
-                size='mini'
+              <img
+                className='ui mini image'
                 src={`${import.meta.env.BASE_URL}logo.png`}
                 style={{marginRight: '1.5em'}}
+                alt='Enumeration'
                 title='Enumeration - главная страница проекта'
               />
             </Link>
-          </Menu.Item>
+          </div>
 
-          <Menu.Item>
+          <div className='item'>
             <Link to='/rules'>Правила</Link>
-          </Menu.Item>
+          </div>
 
-          <Dropdown item simple text='Категории'>
-            <Dropdown.Menu>{categoriesList}</Dropdown.Menu>
-          </Dropdown>
-        </Container>
-      </Menu>
+          <div className={dropdownClassName} onClick={this.toggleCategories}>
+            <span className='text'>Категории</span>
+            <i className='dropdown icon' aria-hidden='true' />
+            <div className='menu'>{categoriesList}</div>
+          </div>
+        </div>
+      </div>
     )
   }
 }

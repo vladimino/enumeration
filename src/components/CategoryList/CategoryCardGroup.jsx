@@ -4,11 +4,8 @@ import CategoryCard from './CategoryCard'
 import CategoryListPlaceholder from './CategoryListPlaceholder'
 import EmptyCategoriesErrorMessage from './EmptyCategoriesErrorMessage'
 import PropTypes from 'prop-types'
-import {Card} from 'semantic-ui-react'
 
 class CategoryCardGroup extends React.Component {
-  columns = 3 // Cards per row
-
   render() {
     if (!this.props.isLoaded) {
       return <CategoryListPlaceholder />
@@ -22,11 +19,7 @@ class CategoryCardGroup extends React.Component {
       <CategoryCard category={category} key={index} />
     ))
 
-    return (
-      <Card.Group itemsPerRow={this.columns} stackable>
-        {categoryCards}
-      </Card.Group>
-    )
+    return <div className='ui three stackable cards'>{categoryCards}</div>
   }
 }
 

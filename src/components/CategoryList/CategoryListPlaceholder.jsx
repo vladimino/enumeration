@@ -1,28 +1,23 @@
 import React from 'react'
-import {Grid, Placeholder, Segment} from 'semantic-ui-react'
 
 const CategoryListPlaceholder = () => {
   const columns = [1, 2, 3].map((num) => (
-    <Grid.Column key={num}>
-      <Segment raised>
-        <Placeholder>
-          <Placeholder.Header image>
-            <Placeholder.Line />
-          </Placeholder.Header>
-          <Placeholder.Paragraph>
-            <Placeholder.Line length='medium' />
-            <Placeholder.Line length='short' />
-          </Placeholder.Paragraph>
-        </Placeholder>
-      </Segment>
-    </Grid.Column>
+    <div className='column' key={num}>
+      <div className='ui raised segment'>
+        <div className='ui placeholder'>
+          <div className='image header'>
+            <div className='line' />
+          </div>
+          <div className='paragraph'>
+            <div className='line' />
+            <div className='line' />
+          </div>
+        </div>
+      </div>
+    </div>
   ))
 
-  return (
-    <Grid columns={3} stackable>
-      {columns}
-    </Grid>
-  )
+  return <div className='ui three column stackable grid'>{columns}</div>
 }
 
 export default CategoryListPlaceholder

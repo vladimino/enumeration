@@ -1,14 +1,13 @@
 import React from 'react'
-
-import {Icon, Message} from 'semantic-ui-react'
+import Icon from '../ui/Icon'
 
 const EmptyCategoriesErrorMessage = () => (
-  <Message error icon>
+  <div className='ui error icon message'>
     <Icon name='warning' />
-    <Message.Content>
+    <div className='content'>
       Ошибка загрузки категорий. Пожалуйста, сообщите разработчику.
-    </Message.Content>
-  </Message>
+    </div>
+  </div>
 )
 
 export default EmptyCategoriesErrorMessage

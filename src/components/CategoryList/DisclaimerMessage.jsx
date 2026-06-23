@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
-import {Button, Icon, Message} from 'semantic-ui-react'
+import Icon from '../ui/Icon'
 
 class DisclaimerMessage extends React.Component {
   state = {
@@ -29,9 +29,9 @@ class DisclaimerMessage extends React.Component {
     }
 
     return (
-      <Message info icon>
+      <div className='ui info icon message'>
         <Icon name='info' />
-        <Message.Content>
+        <div className='content'>
           <div>
             Сайт был создан как потенциально полезный сервис для тренировок
             команд «Что? Где? Когда?» в рамках оттачивания навыков работы с
@@ -41,16 +41,16 @@ class DisclaimerMessage extends React.Component {
             Для новичков в этом деле:{' '}
             <Link to='/rules#what'>Что такое перебор в ЧГК.</Link>.
           </div>
-          <Button
+          <button
+            type='button'
+            className='ui positive right floated button'
             style={{marginTop: '1em'}}
-            positive
-            floated='right'
             onClick={this.handleClick}
           >
             Я понял, спасибо
-          </Button>
-        </Message.Content>
-      </Message>
+          </button>
+        </div>
+      </div>
     )
   }
 }

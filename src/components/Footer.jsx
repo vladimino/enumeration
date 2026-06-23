@@ -1,19 +1,21 @@
 import React from 'react'
-import {Segment, Container, Image, List} from 'semantic-ui-react'
 
 const Footer = () => (
-  <Segment
-    inverted
-    vertical
+  <div
+    className='ui inverted vertical segment'
     style={{margin: '5em 0em 0em', padding: '3em 0em'}}
   >
-    <Container textAlign='center'>
-      <Image centered size='mini' src={`${import.meta.env.BASE_URL}logo.png`} />
-      <List horizontal inverted divided link size='small'>
-        <List.Item>&copy; Владимир Белокур aka vladimino, 2026</List.Item>
-      </List>
-    </Container>
-  </Segment>
+    <div className='ui center aligned container'>
+      <img
+        className='ui centered mini image'
+        src={`${import.meta.env.BASE_URL}logo.png`}
+        alt='Enumeration'
+      />
+      <div className='ui horizontal inverted divided link list'>
+        <div className='item'>&copy; Владимир Белокур aka vladimino, 2026</div>
+      </div>
+    </div>
+  </div>
 )
 
 export default Footer

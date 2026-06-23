@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import {useParams} from 'react-router-dom'
-import {Header, Icon} from 'semantic-ui-react'
+import Icon from '../ui/Icon'
 
 class CategoryView extends React.Component {
   dataUrl = `${import.meta.env.BASE_URL}data/categories/`
@@ -50,11 +50,13 @@ class CategoryView extends React.Component {
 
     return (
       <>
-        <Header as='h1' icon>
+        <h1 className='ui icon header'>
           <Icon name={category.icon} />
-          Категория {category.name} ({category.subjects})
-          <Header.Subheader>{category.description}</Header.Subheader>
-        </Header>
+          <div className='content'>
+            Категория {category.name} ({category.subjects})
+            <div className='sub header'>{category.description}</div>
+          </div>
+        </h1>
         <p>Выберите тему из списка ниже.</p>
         <div>А Б В</div>
       </>
