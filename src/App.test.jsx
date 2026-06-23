@@ -1,5 +1,6 @@
-import {it, vi} from 'vitest'
+import {it, vi, expect} from 'vitest'
 import {createRoot} from 'react-dom/client'
+import {act} from 'react'
 import App from './App'
 
 vi.mock('axios', () => ({
@@ -8,9 +9,18 @@ vi.mock('axios', () => ({
   },
 }))
 
-it('renders without crashing', () => {
+it('renders menu content at the enumeration base path', async () => {
+  window.history.pushState({}, '', '/enumeration/')
+
   const div = document.createElement('div')
+  document.body.appendChild(div)
   const root = createRoot(div)
-  root.render(<App />)
+
+  await act(async () => {
+    root.render(<App />)
+  })
+
+  expect(div.textContent).toContain('Правила')
   root.unmount()
+  div.remove()
 })
