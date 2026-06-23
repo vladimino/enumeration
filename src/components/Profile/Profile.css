@@ -1,0 +1,60 @@
+.profile-page__header {
+  margin-bottom: 1.5rem;
+}
+
+.profile-page__title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-page__title {
+  margin: 0 !important;
+}
+
+.profile-page__edit-button {
+  border: none;
+  background: transparent;
+  color: #767676;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.profile-page__edit-button:hover {
+  color: #2185d0;
+}
+
+.profile-page__edit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-page__input {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  min-width: 12rem;
+}
+
+.profile-page__section {
+  margin-bottom: 1.5rem !important;
+}
+
+.profile-page__total-score {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-page__empty {
+  color: #767676;
+  margin: 0;
+}
+
+.profile-page__table {
+  margin-top: 0 !important;
+}

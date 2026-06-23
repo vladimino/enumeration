@@ -2,9 +2,11 @@ import {useEffect, useRef, useState} from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Icon from './ui/Icon'
+import {useProfile} from '../context/ProfileContext'
 import './MainMenu.css'
 
 const MainMenu = ({categories}) => {
+  const {profile} = useProfile()
   const [categoriesOpen, setCategoriesOpen] = useState(false)
   const dropdownRef = useRef(null)
 
@@ -19,13 +21,11 @@ const MainMenu = ({categories}) => {
     return () => document.removeEventListener('click', handleClickOutside)
   }, [])
 
+  const closeMenus = () => setCategoriesOpen(false)
+
   const categoriesList = categories?.map((category, index) => (
     <div className='item' key={index}>
-      <Link
-        to={category.link}
-        style={{color: '#000'}}
-        onClick={() => setCategoriesOpen(false)}
-      >
+      <Link to={category.link} style={{color: '#000'}} onClick={closeMenus}>
         <Icon name={category.icon} size='mini' />
         <span className='text'>{category.name}</span>
       </Link>
@@ -36,7 +36,7 @@ const MainMenu = ({categories}) => {
     <div className='ui fixed top inverted menu main-menu'>
       <div className='ui container'>
         <div className='header item'>
-          <Link to='/' onClick={() => setCategoriesOpen(false)}>
+          <Link to='/' onClick={closeMenus}>
             <img
               className='ui mini image'
               src={`${import.meta.env.BASE_URL}logo.png`}
@@ -48,7 +48,7 @@ const MainMenu = ({categories}) => {
         </div>
 
         <div className='item'>
-          <Link to='/rules' onClick={() => setCategoriesOpen(false)}>
+          <Link to='/rules' onClick={closeMenus}>
             Правила
           </Link>
         </div>
@@ -63,6 +63,17 @@ const MainMenu = ({categories}) => {
           <div className='menu' onClick={(e) => e.stopPropagation()}>
             {categoriesList}
           </div>
+        </div>
+
+        <div className='right menu'>
+          <Link
+            to='/profile'
+            className={`item main-menu__profile${profile ? '' : ' main-menu__profile--loading'}`}
+            onClick={closeMenus}
+          >
+            <Icon name='user' />
+            <span>{profile?.username ?? '...'}</span>
+          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import axios from 'axios'
 import Body from './components/Body'
 import Footer from './components/Footer'
 import MainMenu from './components/MainMenu'
+import {ProfileProvider} from './context/ProfileContext'
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 const dataUrl = `${import.meta.env.BASE_URL}data/categories.json`
@@ -21,13 +22,13 @@ const App = () => {
   }, [])
 
   return (
-    <div>
+    <ProfileProvider>
       <Router basename={basename}>
         <MainMenu categories={categories} />
         <Body categories={categories} isLoaded={isLoaded} />
         <Footer />
       </Router>
-    </div>
+    </ProfileProvider>
   )
 }
 

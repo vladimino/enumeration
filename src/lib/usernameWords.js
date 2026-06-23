@@ -1,0 +1,33 @@
+export const USERNAME_ADJECTIVES = [
+  'swift',
+  'quiet',
+  'amber',
+  'brave',
+  'clever',
+  'cosmic',
+  'curious',
+  'gentle',
+  'lucky',
+  'mighty',
+  'nimble',
+  'silent',
+  'sunny',
+  'witty',
+]
+
+export const USERNAME_NOUNS = [
+  'badger',
+  'comet',
+  'falcon',
+  'fox',
+  'lynx',
+  'owl',
+  'panda',
+  'rook',
+  'spark',
+  'atlas',
+  'beacon',
+  'cipher',
+  'horizon',
+  'vector',
+]
