@@ -1,28 +1,21 @@
-import React from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Icon from '../ui/Icon'
 
 import './Card.css'
 
-class CategoryCard extends React.Component {
-  render() {
-    const category = this.props.category
-
-    return (
-      <div className='ui card'>
-        <div className='content'>
-          <div className='header'>
-            <Icon name={category.icon} size='small' />
-            <Link to={category.link}>{category.name}</Link>
-          </div>
-          <div className='description'>{category.description}</div>
-          <div className='meta'>{category.subjects} тем</div>
-        </div>
+const CategoryCard = ({category}) => (
+  <div className='ui card'>
+    <div className='content'>
+      <div className='header'>
+        <Icon name={category.icon} size='small' />
+        <Link to={category.link}>{category.name}</Link>
       </div>
-    )
-  }
-}
+      <div className='description'>{category.description}</div>
+      <div className='meta'>{category.subjects} тем</div>
+    </div>
+  </div>
+)
 
 CategoryCard.propTypes = {
   category: PropTypes.object.isRequired,

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Rules = () => (
   <>
     <h1 className='ui header'>Правила</h1>

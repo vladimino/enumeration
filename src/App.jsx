@@ -1,4 +1,4 @@
-import React from 'react'
+import {useEffect, useState} from 'react'
 import {BrowserRouter as Router} from 'react-router-dom'
 import axios from 'axios'
 import Body from './components/Body'
@@ -6,36 +6,29 @@ import Footer from './components/Footer'
 import MainMenu from './components/MainMenu'
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+const dataUrl = `${import.meta.env.BASE_URL}data/categories.json`
 
-class App extends React.Component {
-  dataUrl = `${import.meta.env.BASE_URL}data/categories.json`
-  state = {
-    categories: [],
-    isLoaded: false,
-  }
+const App = () => {
+  const [categories, setCategories] = useState([])
+  const [isLoaded, setIsLoaded] = useState(false)
 
-  componentDidMount() {
+  useEffect(() => {
     axios
-      .get(this.dataUrl)
-      .then((res) => this.setState({categories: res.data}))
+      .get(dataUrl)
+      .then((res) => setCategories(res.data))
       .catch((error) => console.error(error))
-      .finally(() => this.setState({isLoaded: true}))
-  }
+      .finally(() => setIsLoaded(true))
+  }, [])
 
-  render() {
-    return (
-      <div>
-        <Router basename={basename}>
-          <MainMenu categories={this.state.categories} />
-          <Body
-            categories={this.state.categories}
-            isLoaded={this.state.isLoaded}
-          />
-          <Footer />
-        </Router>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Router basename={basename}>
+        <MainMenu categories={categories} />
+        <Body categories={categories} isLoaded={isLoaded} />
+        <Footer />
+      </Router>
+    </div>
+  )
 }
 
 export default App

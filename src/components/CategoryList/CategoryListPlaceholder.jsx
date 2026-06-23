@@ -1,5 +1,3 @@
-import React from 'react'
-
 const CategoryListPlaceholder = () => {
   const columns = [1, 2, 3].map((num) => (
     <div className='column' key={num}>
