@@ -23,7 +23,7 @@ class MainMenu extends React.Component {
             <Link to='/'>
               <Image
                 size='mini'
-                src={process.env.PUBLIC_URL + '/logo.png'}
+                src={`${import.meta.env.BASE_URL}logo.png`}
                 style={{marginRight: '1.5em'}}
                 title='Enumeration - главная страница проекта'
               />

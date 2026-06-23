@@ -4,7 +4,7 @@ import {useParams} from 'react-router-dom'
 import {Header, Icon} from 'semantic-ui-react'
 
 class CategoryView extends React.Component {
-  dataUrl = process.env.PUBLIC_URL + '/data/categories/'
+  dataUrl = `${import.meta.env.BASE_URL}data/categories/`
   state = {
     category: null,
     isLoaded: false,

@@ -2,7 +2,7 @@ import React from 'react'
 import {Grid, Placeholder, Segment} from 'semantic-ui-react'
 
 const CategoryListPlaceholder = () => {
-  const columns = [1, 2, 3].map(num => (
+  const columns = [1, 2, 3].map((num) => (
     <Grid.Column key={num}>
       <Segment raised>
         <Placeholder>

@@ -1,6 +1,12 @@
-import React from 'react'
+import {it, vi} from 'vitest'
 import {createRoot} from 'react-dom/client'
 import App from './App'
+
+vi.mock('axios', () => ({
+  default: {
+    get: vi.fn(() => Promise.resolve({data: []})),
+  },
+}))
 
 it('renders without crashing', () => {
   const div = document.createElement('div')

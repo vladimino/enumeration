@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: npm test
 
       - name: Build
         run: npm run build
@@ -40,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          path: dist
 
   deploy:
     needs: build
