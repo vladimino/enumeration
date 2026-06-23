@@ -1,0 +1,73 @@
+.list-game__entered-panel {
+  margin: 1.5em 0;
+  padding: 1em 1.25em;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(34, 36, 38, 0.12);
+  border-radius: 0.28571429rem;
+}
+
+.list-game__entered-list {
+  margin: 0;
+}
+
+.list-game__entered-list .item {
+  padding: 0.35em 0;
+  color: rgba(0, 0, 0, 0.55);
+  font-style: italic;
+}
+
+.list-game__input-row {
+  display: flex;
+  gap: 0.75em;
+  margin-bottom: 2em;
+}
+
+.list-game__input-row .ui.input {
+  flex: 1;
+}
+
+.list-game__finish {
+  margin-top: 1em;
+}
+
+.list-game__review-list .item {
+  padding: 0.5em 0;
+}
+
+.list-game__review-list .icon {
+  width: 1.25em;
+}
+
+.list-game__missed {
+  margin-top: 1.5em;
+}
+
+.list-game__missed-panel {
+  padding: 1.25em;
+  background: #f8f8f9;
+  border: 1px solid rgba(34, 36, 38, 0.1);
+  border-radius: 0.28571429rem;
+}
+
+.list-game__missed-panel .ui.small.header {
+  margin: 0 0 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.list-game__missed-panel .ui.labels {
+  margin: 0;
+}
+
+.list-game__missed-panel .ui.label {
+  margin: 0.35em 0.5em 0.35em 0;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: normal;
+  box-shadow: none;
+}
+
+.list-game__score {
+  margin: 1em 0 1.5em;
+  font-size: 1.1em;
+}

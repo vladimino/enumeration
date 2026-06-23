@@ -24,7 +24,7 @@ const App = () => {
     <ProfileProvider>
       <Router basename={basename}>
         <MainMenu categories={categories} />
-        <Body categories={categories} isLoaded={isLoaded} />
+        <Body catalog={catalog} categories={categories} isLoaded={isLoaded} />
         <Footer />
       </Router>
     </ProfileProvider>

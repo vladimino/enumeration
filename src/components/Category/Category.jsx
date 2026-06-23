@@ -2,7 +2,12 @@ import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 import {useParams} from 'react-router-dom'
 import Icon from '../ui/Icon'
-import {findCategoryBySlug, listCountLabel} from '../../lib/categories'
+import {
+  categoryPath,
+  findCategoryBySlug,
+  listCountLabel,
+  listPath,
+} from '../../lib/categories'
 
 const Category = ({categories, isLoaded}) => {
   const {slug} = useParams()
@@ -39,7 +44,9 @@ const Category = ({categories, isLoaded}) => {
           {lists.map((list) => (
             <div className='item' key={list.slug}>
               <div className='content'>
-                <div className='header'>{list.name}</div>
+                <div className='header'>
+                  <Link to={listPath(slug, list.slug)}>{list.name}</Link>
+                </div>
                 {list.description && (
                   <div className='description'>{list.description}</div>
                 )}
