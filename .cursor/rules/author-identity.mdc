@@ -1,0 +1,14 @@
+---
+description: Author name and identity for commits, licenses, and attribution
+alwaysApply: true
+---
+
+# Author identity
+
+Use the author's preferred name in licenses, README attribution, footers, and commit author metadata when relevant:
+
+- **English:** Volodymyr Bilokur
+- **Ukrainian:** Володимир Білокур
+- **GitHub username:** vladimino
+
+Do not use "Vladimir Belokur" or Russian-form "Владимир Белокур".
