@@ -1,0 +1,30 @@
+{
+  "answers": [
+    {"text": "Альфа", "aliases": ["Alfa"]},
+    {"text": "Браво", "aliases": ["Bravo"]},
+    {"text": "Чарли", "aliases": ["Charlie"]},
+    {"text": "Дельта", "aliases": ["Delta"]},
+    {"text": "Эхо", "aliases": ["Echo"]},
+    {"text": "Фокстрот", "aliases": ["Foxtrot"]},
+    {"text": "Гольф", "aliases": ["Golf"]},
+    {"text": "Хотел", "aliases": ["Hotel"]},
+    {"text": "Индия", "aliases": ["India"]},
+    {"text": "Джульетт", "aliases": ["Juliet"]},
+    {"text": "Кило", "aliases": ["Kilo"]},
+    {"text": "Лима", "aliases": ["Lima"]},
+    {"text": "Майк", "aliases": ["Mike"]},
+    {"text": "Ноябрь", "aliases": ["November"]},
+    {"text": "Оскар", "aliases": ["Oscar"]},
+    {"text": "Папа", "aliases": ["Papa"]},
+    {"text": "Квебек", "aliases": ["Quebec"]},
+    {"text": "Ромео", "aliases": ["Romeo"]},
+    {"text": "Сьерра", "aliases": ["Sierra"]},
+    {"text": "Танго", "aliases": ["Tango"]},
+    {"text": "Униформ", "aliases": ["Uniform"]},
+    {"text": "Виктор", "aliases": ["Victor"]},
+    {"text": "Виски", "aliases": ["Whiskey"]},
+    {"text": "Икс-рей", "aliases": ["X-ray"]},
+    {"text": "Янки", "aliases": ["Yankee"]},
+    {"text": "Зулу", "aliases": ["Zulu"]}
+  ]
+}

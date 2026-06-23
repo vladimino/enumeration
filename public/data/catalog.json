@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "categories": [
+    {
+      "slug": "history",
+      "name": "История",
+      "icon": "history",
+      "description": "Личности, события"
+    },
+    {
+      "slug": "science",
+      "name": "Наука",
+      "icon": "lab",
+      "description": "Ученые, открытия, термины"
+    },
+    {
+      "slug": "culture",
+      "name": "Культура",
+      "icon": "paint brush",
+      "description": "Музыка, кино, книги, картины"
+    },
+    {
+      "slug": "geo",
+      "name": "География",
+      "icon": "globe",
+      "description": "Города, страны, народы"
+    },
+    {
+      "slug": "nature",
+      "name": "Природа",
+      "icon": "tree",
+      "description": "Животные, растения, космос"
+    },
+    {
+      "slug": "sport",
+      "name": "Спорт",
+      "icon": "soccer",
+      "description": "Соревнования, спортсмены, достижения"
+    },
+    {
+      "slug": "reference",
+      "name": "Справочники",
+      "icon": "book",
+      "description": "Классические конечные списки и классификации"
+    }
+  ],
+  "lists": [
+    {
+      "slug": "olympic-capitals",
+      "name": "Города — организаторы Олимпийских игр",
+      "description": "Города, в которых проходили летние и зимние Олимпийские игры",
+      "categories": ["geo", "sport", "history"]
+    },
+    {
+      "slug": "constellations",
+      "name": "Созвездия",
+      "description": "Все 88 официальных созвездий северного и южного неба",
+      "categories": ["nature", "reference"]
+    },
+    {
+      "slug": "nato-alphabet",
+      "name": "Фонетический алфавит НАТО",
+      "description": "26 кодовых слов для обозначения букв латинского алфавита",
+      "categories": ["reference"]
+    },
+    {
+      "slug": "us-states",
+      "name": "Штаты США",
+      "description": "Все 50 штатов Соединённых Штатов Америки",
+      "categories": ["geo"]
+    }
+  ]
+}

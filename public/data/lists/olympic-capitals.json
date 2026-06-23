@@ -1,0 +1,62 @@
+{
+  "answers": [
+    {"text": "Альбервиль", "aliases": ["Albertville", "Альбервилль"]},
+    {"text": "Амстердам", "aliases": ["Amsterdam"]},
+    {"text": "Антверпен", "aliases": ["Antwerp"]},
+    {"text": "Атланта", "aliases": ["Atlanta"]},
+    {"text": "Афины", "aliases": ["Athens"]},
+    {"text": "Барселона", "aliases": ["Barcelona"]},
+    {"text": "Берлин", "aliases": ["Berlin"]},
+    {"text": "Ванкувер", "aliases": ["Vancouver"]},
+    {
+      "text": "Гармиш-Партенкирхен",
+      "aliases": ["Garmisch-Partenkirchen", "Гармиш Партенкирхен", "Гэрмиш Партенкирхен", "Гэрмиш-Партенкирхен"]
+    },
+    {"text": "Гренобль", "aliases": ["Grenoble"]},
+    {"text": "Инсбрук", "aliases": ["Innsbruck", "Иннсбрук"]},
+    {"text": "Калгари", "aliases": ["Calgary"]},
+    {
+      "text": "Кортина-д'Ампеццо",
+      "aliases": ["Cortina d'Ampezzo", "Кортина дАмпеццо", "Кортина д'Ампеццо"]
+    },
+    {"text": "Лейк-Плэсид", "aliases": ["Lake Placid", "Лейк Плэсид"]},
+    {"text": "Лиллехаммер", "aliases": ["Lillehammer", "Лиллихаммер"]},
+    {"text": "Лондон", "aliases": ["London"]},
+    {"text": "Лос-Анджелес", "aliases": ["Los Angeles", "Лос Анджелес"]},
+    {"text": "Мельбурн", "aliases": ["Melbourne"]},
+    {"text": "Мехико", "aliases": ["Mexico City"]},
+    {"text": "Монреаль", "aliases": ["Montreal"]},
+    {"text": "Москва", "aliases": ["Moscow"]},
+    {"text": "Мюнхен", "aliases": ["Munich"]},
+    {"text": "Нагано", "aliases": ["Nagano"]},
+    {"text": "Осло", "aliases": ["Oslo"]},
+    {"text": "Париж", "aliases": ["Paris"]},
+    {"text": "Пекин", "aliases": ["Beijing"]},
+    {"text": "Пхёнчхан", "aliases": ["Pyeongchang", "Пхенчхан"]},
+    {"text": "Рим", "aliases": ["Rome", "Рима"]},
+    {
+      "text": "Рио-де-Жанейро",
+      "aliases": ["Rio de Janeiro", "Рио де Жанейро", "Рио"]
+    },
+    {
+      "text": "Санкт-Мориц",
+      "aliases": ["St. Moritz", "Saint Moritz", "St Moritz", "Санкт Мориц"]
+    },
+    {"text": "Саппоро", "aliases": ["Sapporo"]},
+    {"text": "Сараево", "aliases": ["Sarajevo"]},
+    {"text": "Сент-Луис", "aliases": ["St. Louis", "Saint Louis", "Сент Луис"]},
+    {"text": "Сеул", "aliases": ["Seoul"]},
+    {"text": "Сидней", "aliases": ["Sydney"]},
+    {"text": "Скво-Вэлли", "aliases": ["Squaw Valley", "Скво Вэлли"]},
+    {
+      "text": "Солт-Лейк-Сити",
+      "aliases": ["Salt Lake City", "Солт Лейк Сити"]
+    },
+    {"text": "Сочи", "aliases": ["Sochi"]},
+    {"text": "Стокгольм", "aliases": ["Stockholm"]},
+    {"text": "Токио", "aliases": ["Tokyo"]},
+    {"text": "Турин", "aliases": ["Turin", "Торино"]},
+    {"text": "Хельсинки", "aliases": ["Helsinki"]},
+    {"text": "Шамони", "aliases": ["Chamonix"]}
+  ]
+}

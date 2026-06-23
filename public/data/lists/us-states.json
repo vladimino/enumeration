@@ -1,0 +1,77 @@
+{
+  "answers": [
+    {"text": "Айдахо", "aliases": ["Idaho"]},
+    {"text": "Алабама", "aliases": ["Alabama"]},
+    {"text": "Аляска", "aliases": ["Alaska"]},
+    {"text": "Аризона", "aliases": ["Arizona"]},
+    {"text": "Арканзас", "aliases": ["Arkansas"]},
+    {"text": "Вайоминг", "aliases": ["Wyoming"]},
+    {"text": "Вашингтон", "aliases": ["Washington"]},
+    {"text": "Вермонт", "aliases": ["Vermont"]},
+    {"text": "Виргиния", "aliases": ["Virginia"]},
+    {"text": "Висконсин", "aliases": ["Wisconsin"]},
+    {"text": "Гавайи", "aliases": ["Hawaii"]},
+    {"text": "Делавэр", "aliases": ["Delaware"]},
+    {"text": "Джорджия", "aliases": ["Georgia"]},
+    {
+      "text": "Западная Виргиния",
+      "aliases": ["West Virginia"]
+    },
+    {"text": "Иллинойс", "aliases": ["Illinois"]},
+    {"text": "Индиана", "aliases": ["Indiana"]},
+    {"text": "Калифорния", "aliases": ["California"]},
+    {"text": "Канзас", "aliases": ["Kansas"]},
+    {"text": "Кентукки", "aliases": ["Kentucky"]},
+    {"text": "Колорадо", "aliases": ["Colorado"]},
+    {"text": "Коннектикут", "aliases": ["Connecticut"]},
+    {"text": "Луизиана", "aliases": ["Louisiana"]},
+    {"text": "Массачусетс", "aliases": ["Massachusetts"]},
+    {"text": "Миннесота", "aliases": ["Minnesota"]},
+    {"text": "Миссисипи", "aliases": ["Mississippi"]},
+    {"text": "Миссури", "aliases": ["Missouri"]},
+    {"text": "Мичиган", "aliases": ["Michigan"]},
+    {"text": "Монтана", "aliases": ["Montana"]},
+    {"text": "Мэн", "aliases": ["Maine"]},
+    {"text": "Мэриленд", "aliases": ["Maryland"]},
+    {"text": "Небраска", "aliases": ["Nebraska"]},
+    {"text": "Невада", "aliases": ["Nevada"]},
+    {
+      "text": "Нью-Гэмпшир",
+      "aliases": ["New Hampshire", "Нью Гэмпшир"]
+    },
+    {
+      "text": "Нью-Джерси",
+      "aliases": ["New Jersey", "Нью Джерси"]
+    },
+    {
+      "text": "Нью-Мексико",
+      "aliases": ["New Mexico", "Нью Мексико"]
+    },
+    {"text": "Нью-Йорк", "aliases": ["New York", "Нью Йорк"]},
+    {"text": "Огайо", "aliases": ["Ohio"]},
+    {"text": "Оклахома", "aliases": ["Oklahoma"]},
+    {"text": "Орегон", "aliases": ["Oregon"]},
+    {"text": "Пенсильвания", "aliases": ["Pennsylvania"]},
+    {"text": "Род-Айленд", "aliases": ["Rhode Island", "Род Айленд"]},
+    {
+      "text": "Северная Дакота",
+      "aliases": ["North Dakota"]
+    },
+    {
+      "text": "Северная Каролина",
+      "aliases": ["North Carolina"]
+    },
+    {"text": "Теннесси", "aliases": ["Tennessee", "Тенесси", "Тенеси", "Теннеси"]},
+    {"text": "Техас", "aliases": ["Texas"]},
+    {"text": "Флорида", "aliases": ["Florida"]},
+    {
+      "text": "Южная Дакота",
+      "aliases": ["South Dakota"]
+    },
+    {
+      "text": "Южная Каролина",
+      "aliases": ["South Carolina"]
+    },
+    {"text": "Юта", "aliases": ["Utah"]}
+  ]
+}
