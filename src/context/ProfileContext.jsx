@@ -6,6 +6,7 @@ import {
   useState,
 } from 'react'
 import {
+  completeIntroduction as persistIntroduction,
   ensureProfile,
   saveProfile,
   updateUsername as persistUsername,
@@ -24,6 +25,10 @@ export const ProfileProvider = ({children}) => {
     setProfile(persistUsername(username))
   }, [])
 
+  const completeIntroduction = useCallback((username) => {
+    setProfile(persistIntroduction(username))
+  }, [])
+
   const refreshProfile = useCallback(() => {
     setProfile(ensureProfile())
   }, [])
@@ -39,7 +44,13 @@ export const ProfileProvider = ({children}) => {
 
   return (
     <ProfileContext.Provider
-      value={{profile, setUsername, refreshProfile, patchProfile}}
+      value={{
+        profile,
+        setUsername,
+        completeIntroduction,
+        refreshProfile,
+        patchProfile,
+      }}
     >
       {children}
     </ProfileContext.Provider>

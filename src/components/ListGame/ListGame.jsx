@@ -1,15 +1,30 @@
 import {useEffect, useRef, useState} from 'react'
 import PropTypes from 'prop-types'
 import {Link, useParams} from 'react-router-dom'
+import {useProfile} from '../../context/ProfileContext'
 import {getListInCategory, loadFullList} from '../../lib/catalog'
 import {categoryPath, findCategoryBySlug} from '../../lib/categories'
 import {reviewAnswers} from '../../lib/answerMatching'
-import Icon from '../ui/Icon'
+import {hasIntroduced} from '../../lib/profileStorage'
+import IntroduceModal from '../IntroduceModal/IntroduceModal'
 
 import './ListGame.css'
 
+const AnswerLabelsPanel = ({title, children}) => (
+  <div className='list-game__label-panel'>
+    <h3 className='ui small header'>{title}</h3>
+    <div className='ui labels'>{children}</div>
+  </div>
+)
+
+AnswerLabelsPanel.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+}
+
 const ListGame = ({catalog, categories, isLoaded}) => {
   const {categorySlug, listSlug} = useParams()
+  const {profile, completeIntroduction} = useProfile()
   const inputRef = useRef(null)
   const [list, setList] = useState(null)
   const [listError, setListError] = useState(false)
@@ -23,9 +38,10 @@ const ListGame = ({catalog, categories, isLoaded}) => {
     ? getListInCategory(catalog, categorySlug, listSlug)
     : null
   const category = findCategoryBySlug(categories, categorySlug)
+  const needsIntroduction = profile && !hasIntroduced(profile)
 
   useEffect(() => {
-    if (!isLoaded || !listStub) {
+    if (!isLoaded || !listStub || needsIntroduction) {
       return
     }
 
@@ -53,7 +69,7 @@ const ListGame = ({catalog, categories, isLoaded}) => {
     return () => {
       cancelled = true
     }
-  }, [catalog, isLoaded, listStub, listSlug])
+  }, [catalog, isLoaded, listStub, listSlug, needsIntroduction])
 
   useEffect(() => {
     if (phase === 'playing' && list) {
@@ -61,12 +77,21 @@ const ListGame = ({catalog, categories, isLoaded}) => {
     }
   }, [phase, list])
 
-  if (!isLoaded) {
+  if (!isLoaded || !profile) {
     return <div>Loading...</div>
   }
 
   if (!listStub) {
     return <div>Список не найден...</div>
+  }
+
+  if (needsIntroduction) {
+    return (
+      <IntroduceModal
+        username={profile.username}
+        onSave={completeIntroduction}
+      />
+    )
   }
 
   if (listError) {
@@ -122,15 +147,16 @@ const ListGame = ({catalog, categories, isLoaded}) => {
       {phase === 'playing' ? (
         <>
           {answers.length > 0 && (
-            <div className='list-game__entered-panel'>
-              <div className='ui relaxed list list-game__entered-list'>
-                {answers.map((answer, index) => (
-                  <div className='item' key={`${answer}-${index}`}>
-                    <div className='content'>{answer}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <AnswerLabelsPanel title={`Ваши ответы (${answers.length})`}>
+              {answers.map((answer, index) => (
+                <span
+                  className='ui label list-game__label--pending'
+                  key={`${answer}-${index}`}
+                >
+                  {answer}
+                </span>
+              ))}
+            </AnswerLabelsPanel>
           )}
 
           <form className='list-game__input-row' onSubmit={handleSubmit}>
@@ -162,59 +188,59 @@ const ListGame = ({catalog, categories, isLoaded}) => {
             Верно: <strong>{review.score}</strong> из {review.total}
           </div>
 
-          <div className='ui relaxed list list-game__review-list'>
-            {review.reviewed.map((item, index) => (
-              <div className='item' key={`${item.text}-${index}`}>
-                <Icon
-                  name={
-                    item.status === 'correct'
-                      ? 'green check circle'
-                      : 'red times circle'
-                  }
-                />
-                <div className='content'>{item.text}</div>
-              </div>
-            ))}
-          </div>
-
-          {review.reviewed.length === 0 && (
+          {review.reviewed.length > 0 ? (
+            <AnswerLabelsPanel
+              title={`Ваши ответы (${review.reviewed.length})`}
+            >
+              {review.reviewed.map((item, index) => (
+                <span
+                  className={`ui label list-game__label--${item.status}`}
+                  key={`${item.text}-${index}`}
+                >
+                  {item.text}
+                </span>
+              ))}
+            </AnswerLabelsPanel>
+          ) : (
             <p className='ui message'>Вы не ввели ни одного ответа.</p>
           )}
 
-          {review.missed.length > 0 && (
-            <div className='list-game__missed'>
-              {!showMissed ? (
-                <button
-                  className='ui button'
-                  type='button'
-                  onClick={() => setShowMissed(true)}
-                >
-                  Показать пропущенные
-                </button>
-              ) : (
-                <div className='list-game__missed-panel'>
-                  <h3 className='ui small header'>
-                    Пропущенные ответы ({review.missed.length})
-                  </h3>
-                  <div className='ui labels'>
+          <div className='list-game__review-actions'>
+            {review.missed.length > 0 && (
+              <div className='list-game__missed'>
+                {!showMissed ? (
+                  <button
+                    className='ui button'
+                    type='button'
+                    onClick={() => setShowMissed(true)}
+                  >
+                    Показать пропущенные
+                  </button>
+                ) : (
+                  <AnswerLabelsPanel
+                    title={`Пропущенные ответы (${review.missed.length})`}
+                  >
                     {review.missed.map((answer) => (
-                      <span className='ui label' key={answer}>
+                      <span
+                        className='ui label list-game__label--missed'
+                        key={answer}
+                      >
                         {answer}
                       </span>
                     ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
+                  </AnswerLabelsPanel>
+                )}
+              </div>
+            )}
 
-          <button
-            className='ui huge primary fluid button list-game__finish'
-            type='button'
-            onClick={handlePlayAgain}
-          >
-            Играть снова
-          </button>
+            <button
+              className='ui huge primary fluid button'
+              type='button'
+              onClick={handlePlayAgain}
+            >
+              Играть снова
+            </button>
+          </div>
         </>
       )}
     </div>

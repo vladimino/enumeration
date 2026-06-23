@@ -138,21 +138,28 @@ const Rules = () => {
       </h2>
 
       <p>
-        После завершения попытки вы увидите свои ответы с цветовой разметкой:
+        Во время попытки введённые ответы появляются на экране в виде{' '}
+        <strong>серых меток</strong> — пока без оценки, просто чтобы видеть, что
+        уже назвали.
       </p>
+
+      <p>После завершения те же метки окрашиваются:</p>
+
+      <div className='ui labels rules__answer-examples'>
+        <span className='ui label rules__label--correct'>Париж</span>
+        <span className='ui label rules__label--incorrect'>Лондон</span>
+      </div>
 
       <div className='ui relaxed list'>
         <div className='item'>
-          <i className='green check circle icon' aria-hidden='true' />
           <div className='content'>
-            <strong>Зелёный</strong> — ответ совпал с эталонным списком, очки
-            засчитаны.
+            <strong>Зелёная метка</strong> — ответ совпал с эталонным списком,
+            очки засчитаны.
           </div>
         </div>
         <div className='item'>
-          <i className='red times circle icon' aria-hidden='true' />
           <div className='content'>
-            <strong>Красный</strong> — в нашем списке такого пункта нет.
+            <strong>Красная метка</strong> — в нашем списке такого пункта нет.
             Возможно, вы вспомнили что-то смежное или знаете вариант, которого
             мы ещё не добавили. Для таких случаев предусмотрена возможность{' '}
             <strong>оспорить</strong> решение (механизм заявок — в разработке).
@@ -162,7 +169,7 @@ const Rules = () => {
 
       <p>
         Полный эталонный список <strong>скрыт по умолчанию</strong>. Его можно
-        открыть по запросу — «показать, что я пропустил» — чтобы после попытки
+        открыть кнопкой <strong>«Показать пропущенные»</strong> — чтобы
         посмотреть, какие варианты ещё входят в тему.
       </p>
 

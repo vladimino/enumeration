@@ -1,3 +1,25 @@
 .rules-page [id] {
   scroll-margin-top: 5.5rem;
 }
+
+.rules__answer-examples {
+  margin: 0 0 1.5em;
+}
+
+.rules__answer-examples .ui.label {
+  margin: 0.35em 0.5em 0.35em 0;
+  font-weight: normal;
+  box-shadow: none;
+}
+
+.rules__answer-examples .ui.label.rules__label--correct {
+  background: #fcfff5;
+  border: 1px solid #a3c293;
+  color: #1a7f37;
+}
+
+.rules__answer-examples .ui.label.rules__label--incorrect {
+  background: #fff6f6;
+  border: 1px solid #e0b4b4;
+  color: #9f3a38;
+}

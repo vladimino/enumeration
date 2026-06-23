@@ -1,0 +1,39 @@
+.introduce-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.introduce-modal__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 28em;
+  padding: 1.5em;
+  background: #fff;
+  border-radius: 0.28571429rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.introduce-modal__dialog .header {
+  margin: 0 0 0.75em;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.introduce-modal__dialog .description {
+  margin: 0 0 1.25em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.introduce-modal__form {
+  margin-bottom: 1.25em;
+}
+
+.introduce-modal__actions {
+  text-align: right;
+}

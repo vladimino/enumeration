@@ -4,6 +4,7 @@ const STORAGE_KEY = 'enumeration.profile'
 
 export const createEmptyProfile = (username = generateUsername()) => ({
   username,
+  introduced: false,
   totalScore: 0,
   scoresByCategory: {},
   gameHistory: [],
@@ -47,6 +48,20 @@ export const updateUsername = (username) => {
   }
 
   const nextProfile = {...profile, username: trimmed}
+  saveProfile(nextProfile)
+  return nextProfile
+}
+
+export const hasIntroduced = (profile) => profile?.introduced === true
+
+export const completeIntroduction = (username) => {
+  const profile = loadProfile() ?? createEmptyProfile()
+  const trimmed = username.trim()
+  const nextProfile = {
+    ...profile,
+    username: trimmed || profile.username,
+    introduced: true,
+  }
   saveProfile(nextProfile)
   return nextProfile
 }
