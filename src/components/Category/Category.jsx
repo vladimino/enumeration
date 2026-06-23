@@ -1,39 +1,12 @@
-import {useEffect, useState} from 'react'
-import axios from 'axios'
+import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 import {useParams} from 'react-router-dom'
 import Icon from '../ui/Icon'
+import {findCategoryBySlug, listCountLabel} from '../../lib/categories'
 
-const dataUrl = `${import.meta.env.BASE_URL}data/categories/`
-
-const Category = () => {
+const Category = ({categories, isLoaded}) => {
   const {slug} = useParams()
-  const [category, setCategory] = useState(null)
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    let cancelled = false
-
-    setCategory(null)
-    setIsLoaded(false)
-
-    axios
-      .get(`${dataUrl}${slug}.json`)
-      .then((res) => {
-        if (!cancelled) {
-          setCategory(res.data)
-        }
-      })
-      .catch((error) => console.error(error))
-      .finally(() => {
-        if (!cancelled) {
-          setIsLoaded(true)
-        }
-      })
-
-    return () => {
-      cancelled = true
-    }
-  }, [slug])
+  const category = findCategoryBySlug(categories, slug)
 
   if (!isLoaded) {
     return <div>Loading...</div>
@@ -43,19 +16,45 @@ const Category = () => {
     return <div>Category data not found...</div>
   }
 
+  const lists = category.lists ?? []
+  const listLabel = listCountLabel(lists.length)
+
   return (
     <>
       <h1 className='ui icon header'>
         <Icon name={category.icon} />
         <div className='content'>
-          Категория {category.name} ({category.subjects})
+          Категория {category.name} ({listLabel})
           <div className='sub header'>{category.description}</div>
         </div>
       </h1>
-      <p>Выберите тему из списка ниже.</p>
-      <div>А Б В</div>
+      <p>Выберите список для тренировки:</p>
+
+      {lists.length === 0 ? (
+        <div className='ui message'>
+          <p>Списки для этой категории скоро появятся.</p>
+        </div>
+      ) : (
+        <div className='ui relaxed divided list'>
+          {lists.map((list) => (
+            <div className='item' key={list.slug}>
+              <div className='content'>
+                <div className='header'>{list.name}</div>
+                {list.description && (
+                  <div className='description'>{list.description}</div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </>
   )
+}
+
+Category.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.object),
+  isLoaded: PropTypes.bool.isRequired,
 }
 
 export default Category

@@ -1,44 +1,44 @@
 [
   {
+    "slug": "history",
     "name": "История",
-    "link": "/category/history",
     "icon": "history",
     "description": "Личности, события",
-    "subjects": 0
+    "lists": []
   },
   {
+    "slug": "science",
     "name": "Наука",
-    "link": "/category/science",
     "icon": "lab",
     "description": "Ученые, открытия, термины",
-    "subjects": 0
+    "lists": []
   },
   {
+    "slug": "culture",
     "name": "Культура",
-    "link": "/category/culture",
     "icon": "paint brush",
     "description": "Музыка, кино, книги, картины",
-    "subjects": 0
+    "lists": []
   },
   {
+    "slug": "geo",
     "name": "География",
-    "link": "/category/geo",
     "icon": "globe",
     "description": "Города, страны, народы",
-    "subjects": 0
+    "lists": []
   },
   {
+    "slug": "nature",
     "name": "Природа",
-    "link": "/category/nature",
     "icon": "tree",
     "description": "Животные, растения, космос",
-    "subjects": 0
+    "lists": []
   },
   {
+    "slug": "sport",
     "name": "Спорт",
-    "link": "/category/sport",
     "icon": "soccer",
     "description": "Соревнования, спортсмены, достижения",
-    "subjects": 0
+    "lists": []
   }
 ]

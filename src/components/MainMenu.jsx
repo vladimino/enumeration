@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Icon from './ui/Icon'
 import {useProfile} from '../context/ProfileContext'
+import {categoryPath} from '../lib/categories'
 import './MainMenu.css'
 
 const MainMenu = ({categories}) => {
@@ -23,9 +24,13 @@ const MainMenu = ({categories}) => {
 
   const closeMenus = () => setCategoriesOpen(false)
 
-  const categoriesList = categories?.map((category, index) => (
-    <div className='item' key={index}>
-      <Link to={category.link} style={{color: '#000'}} onClick={closeMenus}>
+  const categoriesList = categories?.map((category) => (
+    <div className='item' key={category.slug}>
+      <Link
+        to={categoryPath(category.slug)}
+        style={{color: '#000'}}
+        onClick={closeMenus}
+      >
         <Icon name={category.icon} size='mini' />
         <span className='text'>{category.name}</span>
       </Link>

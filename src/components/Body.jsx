@@ -18,7 +18,10 @@ const Body = ({categories, isLoaded}) => (
       />
       <Route path='/rules' element={<Rules />} />
       <Route path='/profile' element={<Profile />} />
-      <Route path='/category/:slug' element={<Category />} />
+      <Route
+        path='/category/:slug'
+        element={<Category categories={categories} isLoaded={isLoaded} />}
+      />
       <Route path='*' element={<NotFound />} />
     </Routes>
   </div>
