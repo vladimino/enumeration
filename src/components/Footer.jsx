@@ -10,7 +10,7 @@ const Footer = () => (
         alt='Enumeration'
       />
       <div className='ui horizontal inverted divided link list'>
-        <div className='item'>&copy; Володимир Білокур aka vladimino, 2026</div>
+        <div className='item'>&copy; Vlad Bilokur aka vladimino, 2026</div>
       </div>
     </div>
   </div>
