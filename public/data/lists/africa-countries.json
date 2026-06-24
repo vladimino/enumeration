@@ -1,0 +1,113 @@
+{
+  "answers": [
+    {"text": "Алжир", "aliases": ["Algeria"]},
+    {"text": "Ангола", "aliases": ["Angola"]},
+    {"text": "Бенин", "aliases": ["Benin"]},
+    {"text": "Ботсвана", "aliases": ["Botswana"]},
+    {
+      "text": "Буркина-Фасо",
+      "aliases": ["Burkina Faso", "Буркина Фасо"]
+    },
+    {"text": "Бурунди", "aliases": ["Burundi"]},
+    {"text": "Габон", "aliases": ["Gabon"]},
+    {"text": "Гамбия", "aliases": ["Gambia"]},
+    {"text": "Гана", "aliases": ["Ghana"]},
+    {"text": "Гвинея", "aliases": ["Guinea"]},
+    {
+      "text": "Гвинея-Бисау",
+      "aliases": ["Guinea-Bissau", "Гвинея Бисау"]
+    },
+    {
+      "text": "Демократическая Республика Конго",
+      "aliases": [
+        "ДР Конго",
+        "ДРК",
+        "Democratic Republic of the Congo",
+        "Congo-Kinshasa",
+        "Заир"
+      ]
+    },
+    {"text": "Джибути", "aliases": ["Djibouti"]},
+    {"text": "Египет", "aliases": ["Egypt"]},
+    {"text": "Замбия", "aliases": ["Zambia"]},
+    {
+      "text": "Западная Сахара",
+      "aliases": ["Western Sahara"]
+    },
+    {"text": "Зимбабве", "aliases": ["Zimbabwe"]},
+    {
+      "text": "Кабо-Верде",
+      "aliases": ["Cape Verde", "Cabo Verde", "Кабо Верде"]
+    },
+    {"text": "Камерун", "aliases": ["Cameroon"]},
+    {"text": "Кения", "aliases": ["Kenya"]},
+    {
+      "text": "Коморские острова",
+      "aliases": ["Коморы", "Comoros"]
+    },
+    {
+      "text": "Конго",
+      "aliases": ["Republic of the Congo", "Congo-Brazzaville", "Республика Конго"]
+    },
+    {
+      "text": "Кот-д’Ивуар",
+      "aliases": ["Кот-д'Ивуар", "Кот д'Ивуар", "Côte d'Ivoire", "Ivory Coast"]
+    },
+    {"text": "Лесото", "aliases": ["Lesotho"]},
+    {"text": "Либерия", "aliases": ["Liberia"]},
+    {"text": "Ливия", "aliases": ["Libya"]},
+    {"text": "Маврикий", "aliases": ["Mauritius"]},
+    {"text": "Мавритания", "aliases": ["Mauritania"]},
+    {"text": "Мадагаскар", "aliases": ["Madagascar"]},
+    {"text": "Малави", "aliases": ["Malawi"]},
+    {"text": "Мали", "aliases": ["Mali"]},
+    {"text": "Марокко", "aliases": ["Morocco"]},
+    {"text": "Мозамбик", "aliases": ["Mozambique"]},
+    {"text": "Намибия", "aliases": ["Namibia"]},
+    {"text": "Нигер", "aliases": ["Niger"]},
+    {"text": "Нигерия", "aliases": ["Nigeria"]},
+    {"text": "Руанда", "aliases": ["Rwanda"]},
+    {
+      "text": "Сан-Томе и Принсипи",
+      "aliases": ["Sao Tome and Principe", "São Tomé and Príncipe"]
+    },
+    {
+      "text": "Сейшельские острова",
+      "aliases": ["Сейшелы", "Seychelles"]
+    },
+    {"text": "Сенегал", "aliases": ["Senegal"]},
+    {"text": "Сомали", "aliases": ["Somalia"]},
+    {"text": "Судан", "aliases": ["Sudan"]},
+    {
+      "text": "Сьерра-Леоне",
+      "aliases": ["Sierra Leone", "Сьерра Леоне"]
+    },
+    {"text": "Танзания", "aliases": ["Tanzania"]},
+    {"text": "Того", "aliases": ["Togo"]},
+    {"text": "Тунис", "aliases": ["Tunisia"]},
+    {"text": "Уганда", "aliases": ["Uganda"]},
+    {
+      "text": "Центральноафриканская Республика",
+      "aliases": ["ЦАР", "Central African Republic", "CAR"]
+    },
+    {"text": "Чад", "aliases": ["Chad"]},
+    {
+      "text": "Экваториальная Гвинея",
+      "aliases": ["Equatorial Guinea"]
+    },
+    {"text": "Эритрея", "aliases": ["Eritrea"]},
+    {
+      "text": "Эсватини",
+      "aliases": ["Свазиленд", "Eswatini", "Swaziland"]
+    },
+    {"text": "Эфиопия", "aliases": ["Ethiopia"]},
+    {
+      "text": "Южно-Африканская Республика",
+      "aliases": ["ЮАР", "South Africa", "Южная Африка"]
+    },
+    {
+      "text": "Южный Судан",
+      "aliases": ["South Sudan"]
+    }
+  ]
+}

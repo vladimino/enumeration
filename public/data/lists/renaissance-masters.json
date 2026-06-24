@@ -1,0 +1,555 @@
+{
+  "answers": [
+    {
+      "text": "Альбрехт Дюрер",
+      "aliases": [
+        "Albrecht Dürer",
+        "Dürer"
+      ]
+    },
+    {
+      "text": "Амброджо Лоренцетти",
+      "aliases": [
+        "Ambrogio Lorenzetti"
+      ]
+    },
+    {
+      "text": "Андреа Верроккьо",
+      "aliases": [
+        "Andrea del Verrocchio",
+        "Verrocchio"
+      ]
+    },
+    {
+      "text": "Андреа дель Кастаньо",
+      "aliases": [
+        "Andrea del Castagno"
+      ]
+    },
+    {
+      "text": "Андреа Мантенья",
+      "aliases": [
+        "Andrea Mantegna",
+        "Mantegna"
+      ]
+    },
+    {
+      "text": "Андреа Палладио",
+      "aliases": [
+        "Andrea Palladio",
+        "Palladio"
+      ]
+    },
+    {
+      "text": "Антонелло да Мессина",
+      "aliases": [
+        "Antonello da Messina"
+      ]
+    },
+    {
+      "text": "Антонио да Сангалло",
+      "aliases": [
+        "Antonio da Sangallo"
+      ]
+    },
+    {
+      "text": "Антонио дель Поллайоло",
+      "aliases": [
+        "Antonio del Pollaiuolo",
+        "Pollaiuolo"
+      ]
+    },
+    {
+      "text": "Антонио Корреджо",
+      "aliases": [
+        "Antonio Correggio",
+        "Correggio"
+      ]
+    },
+    {
+      "text": "Бальдассаре Перуцци",
+      "aliases": [
+        "Baldassare Peruzzi"
+      ]
+    },
+    {
+      "text": "Бартоломео Бандинелли",
+      "aliases": [
+        "Bartolommeo Bandinelli"
+      ]
+    },
+    {
+      "text": "Бенвенуто Челлини",
+      "aliases": [
+        "Benvenuto Cellini",
+        "Cellini"
+      ]
+    },
+    {
+      "text": "Беноццо Гоццоли",
+      "aliases": [
+        "Benozzo Gozzoli"
+      ]
+    },
+    {
+      "text": "Бернардо Дадди",
+      "aliases": [
+        "Bernardo Daddi"
+      ]
+    },
+    {
+      "text": "Бронзино",
+      "aliases": [
+        "Agnolo Bronzino",
+        "Аньоло Бронзино"
+      ]
+    },
+    {
+      "text": "Веронезе",
+      "aliases": [
+        "Паоло Кальяри",
+        "Paolo Veronese",
+        "Paolo Caliari"
+      ]
+    },
+    {
+      "text": "Витторе Карпаччо",
+      "aliases": [
+        "Vittore Carpaccio",
+        "Carpaccio"
+      ]
+    },
+    {
+      "text": "Галеаццо Алесси",
+      "aliases": [
+        "Galeazzo Alessi"
+      ]
+    },
+    {
+      "text": "Ганс Гольбейн-младший",
+      "aliases": [
+        "Hans Holbein the Younger",
+        "Гольбейн-младший",
+        "Holbein"
+      ]
+    },
+    {
+      "text": "Ганс Мемлинг",
+      "aliases": [
+        "Hans Memling",
+        "Memling"
+      ]
+    },
+    {
+      "text": "Давид Гирландайо",
+      "aliases": [
+        "David Ghirlandaio"
+      ]
+    },
+    {
+      "text": "Джакомо да Виньола",
+      "aliases": [
+        "Giacomo da Vignola"
+      ]
+    },
+    {
+      "text": "Джентиле Беллини",
+      "aliases": [
+        "Gentile Bellini"
+      ]
+    },
+    {
+      "text": "Джованни Беллини",
+      "aliases": [
+        "Giovanni Bellini"
+      ]
+    },
+    {
+      "text": "Джованни да Удине",
+      "aliases": [
+        "Giovanni da Udine"
+      ]
+    },
+    {
+      "text": "Джованни Пизано",
+      "aliases": [
+        "Giovanni Pisano"
+      ]
+    },
+    {
+      "text": "Джорджо Вазари",
+      "aliases": [
+        "Giorgio Vasari",
+        "Vasari"
+      ]
+    },
+    {
+      "text": "Джорджоне",
+      "aliases": [
+        "Giorgione"
+      ]
+    },
+    {
+      "text": "Джотто ди Бондоне",
+      "aliases": [
+        "Giotto",
+        "Джотто"
+      ]
+    },
+    {
+      "text": "Джулио Романо",
+      "aliases": [
+        "Giulio Romano"
+      ]
+    },
+    {
+      "text": "Доменико Гирландайо",
+      "aliases": [
+        "Domenico Ghirlandaio"
+      ]
+    },
+    {
+      "text": "Доменико Кампаньола",
+      "aliases": [
+        "Domenico Campagnola"
+      ]
+    },
+    {
+      "text": "Донателло",
+      "aliases": [
+        "Donatello"
+      ]
+    },
+    {
+      "text": "Донато Браманте",
+      "aliases": [
+        "Donato Bramante",
+        "Bramante"
+      ]
+    },
+    {
+      "text": "Иероним Босх",
+      "aliases": [
+        "Hieronymus Bosch",
+        "Босх",
+        "Bosch"
+      ]
+    },
+    {
+      "text": "Йоахим Патинир",
+      "aliases": [
+        "Joachim Patinir"
+      ]
+    },
+    {
+      "text": "Козимо Тура",
+      "aliases": [
+        "Cosmè Tura",
+        "Cosimo Tura"
+      ]
+    },
+    {
+      "text": "Леон Баттиста Альберти",
+      "aliases": [
+        "Leon Battista Alberti",
+        "Альберти"
+      ]
+    },
+    {
+      "text": "Леонардо да Винчи",
+      "aliases": [
+        "Leonardo da Vinci",
+        "Леонардо",
+        "Leonardo"
+      ]
+    },
+    {
+      "text": "Либерале да Верона",
+      "aliases": [
+        "Liberale da Verona"
+      ]
+    },
+    {
+      "text": "Лоренцо Гиберти",
+      "aliases": [
+        "Lorenzo Ghiberti",
+        "Ghiberti"
+      ]
+    },
+    {
+      "text": "Лоренцо Лотто",
+      "aliases": [
+        "Lorenzo Lotto"
+      ]
+    },
+    {
+      "text": "Лука Делла Роббиа",
+      "aliases": [
+        "Luca della Robbia"
+      ]
+    },
+    {
+      "text": "Лука Синьорелли",
+      "aliases": [
+        "Luca Signorelli"
+      ]
+    },
+    {
+      "text": "Лукас Кранах Старший",
+      "aliases": [
+        "Lucas Cranach the Elder",
+        "Кранах Старший",
+        "Cranach"
+      ]
+    },
+    {
+      "text": "Мазаччо",
+      "aliases": [
+        "Masaccio"
+      ]
+    },
+    {
+      "text": "Мазолино",
+      "aliases": [
+        "Masolino"
+      ]
+    },
+    {
+      "text": "Маттиас Грюневальд",
+      "aliases": [
+        "Matthias Grünewald",
+        "Grünewald"
+      ]
+    },
+    {
+      "text": "Микеланджело Буонарроти",
+      "aliases": [
+        "Michelangelo",
+        "Микеланджело",
+        "Michelangelo Buonarroti"
+      ]
+    },
+    {
+      "text": "Микелоццо ди Бартоломео",
+      "aliases": [
+        "Michelozzo"
+      ]
+    },
+    {
+      "text": "Никколо Пиццоло",
+      "aliases": [
+        "Niccolò Pizzolo"
+      ]
+    },
+    {
+      "text": "Паоло Уччелло",
+      "aliases": [
+        "Paolo Uccello",
+        "Uccello"
+      ]
+    },
+    {
+      "text": "Пармиджанино",
+      "aliases": [
+        "Parmigianino",
+        "Джироламо Мадзцола"
+      ]
+    },
+    {
+      "text": "Питер Брейгель Старший",
+      "aliases": [
+        "Pieter Bruegel the Elder",
+        "Брейгель Старший",
+        "Bruegel"
+      ]
+    },
+    {
+      "text": "Понтормо",
+      "aliases": [
+        "Pontormo",
+        "Джакопо да Понтормо"
+      ]
+    },
+    {
+      "text": "Пьеро Делла Франческа",
+      "aliases": [
+        "Piero della Francesca"
+      ]
+    },
+    {
+      "text": "Пьетро Каваллини",
+      "aliases": [
+        "Pietro Cavallini"
+      ]
+    },
+    {
+      "text": "Пьетро Ломбардо",
+      "aliases": [
+        "Pietro Lombardo"
+      ]
+    },
+    {
+      "text": "Пьетро Перуджино",
+      "aliases": [
+        "Pietro Perugino",
+        "Perugino"
+      ]
+    },
+    {
+      "text": "Рафаэль Санти",
+      "aliases": [
+        "Raphael",
+        "Рафаэль",
+        "Raffaello Sanzio"
+      ]
+    },
+    {
+      "text": "Рогир ван дер Вейден",
+      "aliases": [
+        "Rogier van der Weyden"
+      ]
+    },
+    {
+      "text": "Сандро Боттичелли",
+      "aliases": [
+        "Sandro Botticelli",
+        "Боттичелли",
+        "Botticelli"
+      ]
+    },
+    {
+      "text": "Себастьяно дель Пьомбо",
+      "aliases": [
+        "Sebastiano del Piombo"
+      ]
+    },
+    {
+      "text": "Симоне Мартини",
+      "aliases": [
+        "Simone Martini"
+      ]
+    },
+    {
+      "text": "Таддео Гадди",
+      "aliases": [
+        "Taddeo Gaddi"
+      ]
+    },
+    {
+      "text": "Теодор ван Бабюрен",
+      "aliases": [
+        "Theodoor van Baburen"
+      ]
+    },
+    {
+      "text": "Тинторетто",
+      "aliases": [
+        "Tintoretto",
+        "Якопо Робусти",
+        "Jacopo Robusti"
+      ]
+    },
+    {
+      "text": "Тициан",
+      "aliases": [
+        "Titian",
+        "Тициано",
+        "Tiziano Vecellio"
+      ]
+    },
+    {
+      "text": "Федерико Цуккари",
+      "aliases": [
+        "Federico Zuccari"
+      ]
+    },
+    {
+      "text": "Филиппо Брунеллески",
+      "aliases": [
+        "Filippo Brunelleschi",
+        "Brunelleschi"
+      ]
+    },
+    {
+      "text": "Фра Беато Анджелико",
+      "aliases": [
+        "Fra Angelico",
+        "Фра Анджелико",
+        "Beato Angelico"
+      ]
+    },
+    {
+      "text": "Фра Филиппо Липпи",
+      "aliases": [
+        "Fra Filippo Lippi",
+        "Филиппо Липпи",
+        "Filippo Lippi"
+      ]
+    },
+    {
+      "text": "Франческо дель Косса",
+      "aliases": [
+        "Francesco del Cossa"
+      ]
+    },
+    {
+      "text": "Франческо Мороне",
+      "aliases": [
+        "Francesco Morone"
+      ]
+    },
+    {
+      "text": "Хуго ван дер Гус",
+      "aliases": [
+        "Hugo van der Goes"
+      ]
+    },
+    {
+      "text": "Чимабуэ",
+      "aliases": [
+        "Cimabue"
+      ]
+    },
+    {
+      "text": "Эль Греко",
+      "aliases": [
+        "El Greco",
+        "Доменикос Теотокопулос"
+      ]
+    },
+    {
+      "text": "Эрколе де Роберти",
+      "aliases": [
+        "Ercole de' Roberti"
+      ]
+    },
+    {
+      "text": "Якопо Бассано",
+      "aliases": [
+        "Jacopo Bassano"
+      ]
+    },
+    {
+      "text": "Якопо Татти Сансовино",
+      "aliases": [
+        "Jacopo Sansovino",
+        "Sansovino"
+      ]
+    },
+    {
+      "text": "Ян ван Эйк",
+      "aliases": [
+        "Jan van Eyck",
+        "van Eyck"
+      ]
+    },
+    {
+      "text": "Ян Госсарт",
+      "aliases": [
+        "Мабюзе",
+        "Mabuse",
+        "Jan Gossaert"
+      ]
+    }
+  ]
+}

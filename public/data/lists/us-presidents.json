@@ -1,0 +1,186 @@
+{
+  "answers": [
+    {
+      "text": "Джордж Вашингтон",
+      "aliases": ["George Washington", "Вашингтон"]
+    },
+    {"text": "Джон Адамс", "aliases": ["John Adams"]},
+    {
+      "text": "Томас Джефферсон",
+      "aliases": ["Thomas Jefferson", "Джефферсон"]
+    },
+    {
+      "text": "Джеймс Мэдисон",
+      "aliases": ["James Madison", "Мэдисон"]
+    },
+    {"text": "Джеймс Монро", "aliases": ["James Monroe", "Монро"]},
+    {
+      "text": "Джон Куинси Адамс",
+      "aliases": ["John Quincy Adams", "Куинси Адамс"]
+    },
+    {
+      "text": "Эндрю Джексон",
+      "aliases": ["Andrew Jackson", "Джексон"]
+    },
+    {
+      "text": "Мартин Ван Бурен",
+      "aliases": ["Martin Van Buren", "Ван Бурен"]
+    },
+    {
+      "text": "Уильям Генри Гаррисон",
+      "aliases": ["William Henry Harrison", "Уильям Гаррисон"]
+    },
+    {"text": "Джон Тайлер", "aliases": ["John Tyler", "Тайлер"]},
+    {
+      "text": "Джеймс Нокс Полк",
+      "aliases": ["James Polk", "James K. Polk", "Джеймс Полк", "Полк"]
+    },
+    {
+      "text": "Закари Тейлор",
+      "aliases": ["Zachary Taylor", "Тейлор"]
+    },
+    {
+      "text": "Миллард Филлмор",
+      "aliases": ["Millard Fillmore", "Филлмор"]
+    },
+    {"text": "Франклин Пирс", "aliases": ["Franklin Pierce", "Пирс"]},
+    {
+      "text": "Джеймс Бьюкенен",
+      "aliases": ["James Buchanan", "Бьюкенен"]
+    },
+    {
+      "text": "Авраам Линкольн",
+      "aliases": ["Abraham Lincoln", "Линкольн"]
+    },
+    {"text": "Эндрю Джонсон", "aliases": ["Andrew Johnson"]},
+    {
+      "text": "Улисс Симпсон Грант",
+      "aliases": ["Ulysses Grant", "Ulysses S. Grant", "Улисс Грант", "Грант"]
+    },
+    {
+      "text": "Резерфорд Бёрчард Хейс",
+      "aliases": ["Rutherford Hayes", "Rutherford B. Hayes", "Резерфорд Хейс", "Хейс"]
+    },
+    {
+      "text": "Джеймс Абрам Гарфилд",
+      "aliases": ["James Garfield", "Джеймс Гарфилд", "Гарфилд"]
+    },
+    {
+      "text": "Честер Алан Артур",
+      "aliases": ["Chester Arthur", "Честер Артур", "Артур"]
+    },
+    {
+      "text": "Стивен Гровер Кливленд",
+      "aliases": ["Grover Cleveland", "Гровер Кливленд", "Кливленд"]
+    },
+    {
+      "text": "Бенджамин Гаррисон",
+      "aliases": ["Benjamin Harrison"]
+    },
+    {
+      "text": "Уильям Мак-Кинли",
+      "aliases": ["William McKinley", "Маккинли", "Мак-Кинли"]
+    },
+    {
+      "text": "Теодор Рузвельт",
+      "aliases": ["Theodore Roosevelt"]
+    },
+    {
+      "text": "Уильям Говард Тафт",
+      "aliases": ["William Taft", "Уильям Тафт", "Тафт"]
+    },
+    {
+      "text": "Томас Вудро Вильсон",
+      "aliases": ["Woodrow Wilson", "Томас Вильсон", "Вильсон"]
+    },
+    {
+      "text": "Уоррен Гардинг",
+      "aliases": ["Warren Harding", "Гардинг"]
+    },
+    {
+      "text": "Калвин Кулидж",
+      "aliases": ["Calvin Coolidge", "Кулидж"]
+    },
+    {
+      "text": "Герберт Кларк Гувер",
+      "aliases": ["Herbert Hoover", "Герберт Гувер", "Гувер"]
+    },
+    {
+      "text": "Франклин Делано Рузвельт",
+      "aliases": [
+        "Franklin Roosevelt",
+        "Franklin D. Roosevelt",
+        "Франклин Рузвельт"
+      ]
+    },
+    {"text": "Гарри Трумэн", "aliases": ["Harry Truman", "Трумэн"]},
+    {
+      "text": "Дуайт Дэвид Эйзенхауэр",
+      "aliases": ["Dwight Eisenhower", "Дуайт Эйзенхауэр", "Эйзенхауэр"]
+    },
+    {
+      "text": "Джон Фицджералд Кеннеди",
+      "aliases": ["John Kennedy", "John F. Kennedy", "Джон Кеннеди", "Кеннеди"]
+    },
+    {
+      "text": "Линдон Джонсон",
+      "aliases": ["Lyndon Johnson", "Lyndon B. Johnson"]
+    },
+    {
+      "text": "Ричард Милхаус Никсон",
+      "aliases": ["Richard Nixon", "Ричард Никсон", "Никсон"]
+    },
+    {
+      "text": "Джералд Рудолф Форд",
+      "aliases": ["Gerald Ford", "Джералд Форд", "Форд"]
+    },
+    {
+      "text": "Джимми Эрл Картер",
+      "aliases": ["Jimmy Carter", "Джимми Картер", "Картер"]
+    },
+    {
+      "text": "Роналд Уилсон Рейган",
+      "aliases": ["Ronald Reagan", "Роналд Рейган", "Рейган"]
+    },
+    {
+      "text": "Джордж Герберт Уокер Буш",
+      "aliases": [
+        "George H. W. Bush",
+        "Джордж Буш-старший",
+        "Буш старший",
+        "Буш-старший"
+      ]
+    },
+    {
+      "text": "Уильям (Билл) Джефферсон Клинтон",
+      "aliases": [
+        "Bill Clinton",
+        "William Clinton",
+        "Уильям Клинтон",
+        "Билл Клинтон",
+        "Клинтон"
+      ]
+    },
+    {
+      "text": "Джордж У. Буш",
+      "aliases": [
+        "George W. Bush",
+        "Джордж Буш-младший",
+        "Буш младший",
+        "Буш-младший"
+      ]
+    },
+    {
+      "text": "Барак Хуссейн Обама",
+      "aliases": ["Barack Obama", "Барак Обама", "Обама"]
+    },
+    {
+      "text": "Дональд Джон Трамп",
+      "aliases": ["Donald Trump", "Дональд Трамп", "Трамп"]
+    },
+    {
+      "text": "Джо Байден",
+      "aliases": ["Joe Biden", "Joseph Biden", "Байден"]
+    }
+  ]
+}

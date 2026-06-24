@@ -1,0 +1,510 @@
+{
+  "answers": [
+    {
+      "text": "Актиний",
+      "aliases": [
+        "Ac",
+        "Actinium"
+      ]
+    },
+    {
+      "text": "Алюминий",
+      "aliases": [
+        "Al",
+        "Aluminium",
+        "Aluminum"
+      ]
+    },
+    {
+      "text": "Америций",
+      "aliases": [
+        "Am",
+        "Americium"
+      ]
+    },
+    {
+      "text": "Барий",
+      "aliases": [
+        "Ba",
+        "Barium"
+      ]
+    },
+    {
+      "text": "Бериллий",
+      "aliases": [
+        "Be",
+        "Beryllium"
+      ]
+    },
+    {
+      "text": "Берклий",
+      "aliases": [
+        "Bk",
+        "Berkelium"
+      ]
+    },
+    {
+      "text": "Бор",
+      "aliases": [
+        "B",
+        "Boron"
+      ]
+    },
+    {
+      "text": "Ванадий",
+      "aliases": [
+        "V",
+        "Vanadium"
+      ]
+    },
+    {
+      "text": "Висмут",
+      "aliases": [
+        "Bi",
+        "Bismuth"
+      ]
+    },
+    {
+      "text": "Вольфрам",
+      "aliases": [
+        "W",
+        "Tungsten"
+      ]
+    },
+    {
+      "text": "Гадолиний",
+      "aliases": [
+        "Gd",
+        "Gadolinium"
+      ]
+    },
+    {
+      "text": "Галлий",
+      "aliases": [
+        "Ga",
+        "Gallium"
+      ]
+    },
+    {
+      "text": "Гафний",
+      "aliases": [
+        "Hf",
+        "Hafnium"
+      ]
+    },
+    {
+      "text": "Гольмий",
+      "aliases": [
+        "Ho",
+        "Holmium"
+      ]
+    },
+    {
+      "text": "Диспрозий",
+      "aliases": [
+        "Dy",
+        "Dysprosium"
+      ]
+    },
+    {
+      "text": "Европий",
+      "aliases": [
+        "Eu",
+        "Europium"
+      ]
+    },
+    {
+      "text": "Железо",
+      "aliases": [
+        "Fe",
+        "Iron"
+      ]
+    },
+    {
+      "text": "Индий",
+      "aliases": [
+        "In",
+        "Indium"
+      ]
+    },
+    {
+      "text": "Иридий",
+      "aliases": [
+        "Ir",
+        "Iridium"
+      ]
+    },
+    {
+      "text": "Иттербий",
+      "aliases": [
+        "Yb",
+        "Ytterbium"
+      ]
+    },
+    {
+      "text": "Иттрий",
+      "aliases": [
+        "Y",
+        "Yttrium"
+      ]
+    },
+    {
+      "text": "Кадмий",
+      "aliases": [
+        "Cd",
+        "Cadmium"
+      ]
+    },
+    {
+      "text": "Калифорний",
+      "aliases": [
+        "Cf",
+        "Californium"
+      ]
+    },
+    {
+      "text": "Кальций",
+      "aliases": [
+        "Ca",
+        "Calcium"
+      ]
+    },
+    {
+      "text": "Кобальт",
+      "aliases": [
+        "Co",
+        "Cobalt"
+      ]
+    },
+    {
+      "text": "Кремний",
+      "aliases": [
+        "Si",
+        "Silicon"
+      ]
+    },
+    {
+      "text": "Лантан",
+      "aliases": [
+        "La",
+        "Lanthanum"
+      ]
+    },
+    {
+      "text": "Литий",
+      "aliases": [
+        "Li",
+        "Lithium"
+      ]
+    },
+    {
+      "text": "Лютеций",
+      "aliases": [
+        "Lu",
+        "Lutetium"
+      ]
+    },
+    {
+      "text": "Магний",
+      "aliases": [
+        "Mg",
+        "Magnesium"
+      ]
+    },
+    {
+      "text": "Марганец",
+      "aliases": [
+        "Mn",
+        "Manganese"
+      ]
+    },
+    {
+      "text": "Медь",
+      "aliases": [
+        "Cu",
+        "Copper"
+      ]
+    },
+    {
+      "text": "Молибден",
+      "aliases": [
+        "Mo",
+        "Molybdenum"
+      ]
+    },
+    {
+      "text": "Мышьяк",
+      "aliases": [
+        "As",
+        "Arsenic"
+      ]
+    },
+    {
+      "text": "Натрий",
+      "aliases": [
+        "Na",
+        "Sodium"
+      ]
+    },
+    {
+      "text": "Неодим",
+      "aliases": [
+        "Nd",
+        "Neodymium"
+      ]
+    },
+    {
+      "text": "Никель",
+      "aliases": [
+        "Ni",
+        "Nickel"
+      ]
+    },
+    {
+      "text": "Ниобий",
+      "aliases": [
+        "Nb",
+        "Niobium"
+      ]
+    },
+    {
+      "text": "Осмий",
+      "aliases": [
+        "Os",
+        "Osmium"
+      ]
+    },
+    {
+      "text": "Палладий",
+      "aliases": [
+        "Pd",
+        "Palladium"
+      ]
+    },
+    {
+      "text": "Платина",
+      "aliases": [
+        "Pt",
+        "Platinum"
+      ]
+    },
+    {
+      "text": "Полоний",
+      "aliases": [
+        "Po",
+        "Polonium"
+      ]
+    },
+    {
+      "text": "Протактиний",
+      "aliases": [
+        "Pa",
+        "Protactinium"
+      ]
+    },
+    {
+      "text": "Радий",
+      "aliases": [
+        "Ra",
+        "Radium"
+      ]
+    },
+    {
+      "text": "Рений",
+      "aliases": [
+        "Re",
+        "Rhenium"
+      ]
+    },
+    {
+      "text": "Родий",
+      "aliases": [
+        "Rh",
+        "Rhodium"
+      ]
+    },
+    {
+      "text": "Рубидий",
+      "aliases": [
+        "Rb",
+        "Rubidium"
+      ]
+    },
+    {
+      "text": "Рутений",
+      "aliases": [
+        "Ru",
+        "Ruthenium"
+      ]
+    },
+    {
+      "text": "Самарий",
+      "aliases": [
+        "Sm",
+        "Samarium"
+      ]
+    },
+    {
+      "text": "Свинец",
+      "aliases": [
+        "Pb",
+        "Lead"
+      ]
+    },
+    {
+      "text": "Селен",
+      "aliases": [
+        "Se",
+        "Selenium"
+      ]
+    },
+    {
+      "text": "Серебро",
+      "aliases": [
+        "Ag",
+        "Silver"
+      ]
+    },
+    {
+      "text": "Скандий",
+      "aliases": [
+        "Sc",
+        "Scandium"
+      ]
+    },
+    {
+      "text": "Стронций",
+      "aliases": [
+        "Sr",
+        "Strontium"
+      ]
+    },
+    {
+      "text": "Сурьма",
+      "aliases": [
+        "Sb",
+        "Antimony"
+      ]
+    },
+    {
+      "text": "Таллий",
+      "aliases": [
+        "Tl",
+        "Thallium"
+      ]
+    },
+    {
+      "text": "Тантал",
+      "aliases": [
+        "Ta",
+        "Tantalum"
+      ]
+    },
+    {
+      "text": "Теллур",
+      "aliases": [
+        "Te",
+        "Tellurium"
+      ]
+    },
+    {
+      "text": "Тербий",
+      "aliases": [
+        "Tb",
+        "Terbium"
+      ]
+    },
+    {
+      "text": "Технеций",
+      "aliases": [
+        "Tc",
+        "Technetium"
+      ]
+    },
+    {
+      "text": "Титан",
+      "aliases": [
+        "Ti",
+        "Titanium"
+      ]
+    },
+    {
+      "text": "Торий",
+      "aliases": [
+        "Th",
+        "Thorium"
+      ]
+    },
+    {
+      "text": "Тулий",
+      "aliases": [
+        "Tm",
+        "Thulium"
+      ]
+    },
+    {
+      "text": "Уран",
+      "aliases": [
+        "U",
+        "Uranium"
+      ]
+    },
+    {
+      "text": "Фосфор",
+      "aliases": [
+        "P",
+        "Phosphorus"
+      ]
+    },
+    {
+      "text": "Франций",
+      "aliases": [
+        "Fr",
+        "Francium"
+      ]
+    },
+    {
+      "text": "Цезий",
+      "aliases": [
+        "Cs",
+        "Caesium",
+        "Cesium"
+      ]
+    },
+    {
+      "text": "Церий",
+      "aliases": [
+        "Ce",
+        "Cerium"
+      ]
+    },
+    {
+      "text": "Цинк",
+      "aliases": [
+        "Zn",
+        "Zinc"
+      ]
+    },
+    {
+      "text": "Цирконий",
+      "aliases": [
+        "Zr",
+        "Zirconium"
+      ]
+    },
+    {
+      "text": "Эйнштейний",
+      "aliases": [
+        "Es",
+        "Einsteinium"
+      ]
+    },
+    {
+      "text": "Эрбий",
+      "aliases": [
+        "Er",
+        "Erbium"
+      ]
+    }
+  ]
+}

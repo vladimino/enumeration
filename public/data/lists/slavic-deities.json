@@ -1,0 +1,31 @@
+{
+  "answers": [
+    {"text": "Белобог", "aliases": ["Belobog", "Bielobog"]},
+    {"text": "Велес", "aliases": ["Volos", "Волос"]},
+    {"text": "Дажьбог", "aliases": ["Dazhbog", "Dažbog"]},
+    {"text": "Жива", "aliases": ["Živa", "Живе"]},
+    {"text": "Зелу", "aliases": ["Zelu"]},
+    {"text": "Мокошь", "aliases": ["Mokosh", "Дива"]},
+    {"text": "Ний", "aliases": ["Nij", "Nye"]},
+    {"text": "Переплут", "aliases": ["Pereplut"]},
+    {"text": "Перун", "aliases": ["Perun"]},
+    {"text": "Пизамар", "aliases": ["Pizamar"]},
+    {"text": "Подага", "aliases": ["Podaga"]},
+    {"text": "Поревит", "aliases": ["Borovit", "Боровит"]},
+    {"text": "Поренут", "aliases": ["Turupit", "Турупит"]},
+    {"text": "Припегала", "aliases": ["Pripegala"]},
+    {"text": "Прове", "aliases": ["Prove"]},
+    {"text": "Ругевит", "aliases": ["Rugievit", "Rujevit"]},
+    {"text": "Сварог", "aliases": ["Svarog"]},
+    {"text": "Сварожич", "aliases": ["Svarozhich", "Radagast", "Радегаст"]},
+    {"text": "Святовит", "aliases": ["Svetovid", "Svantevit"]},
+    {"text": "Симаргл", "aliases": ["Simargl", "Сим и Регл"]},
+    {"text": "Стрибог", "aliases": ["Stribog"]},
+    {"text": "Триглав", "aliases": ["Triglav"]},
+    {"text": "Хеннил", "aliases": ["Bendil", "Бендил"]},
+    {"text": "Хорс", "aliases": ["Khors", "Hors"]},
+    {"text": "Чернобог", "aliases": ["Chernobog", "Czernobog"]},
+    {"text": "Черноглав", "aliases": ["Chernoglav"]},
+    {"text": "Яровит", "aliases": ["Jarovit", "Yarowit"]}
+  ]
+}

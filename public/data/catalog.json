@@ -17,7 +17,13 @@
       "slug": "culture",
       "name": "Культура",
       "icon": "paint brush",
-      "description": "Музыка, кино, книги, картины"
+      "description": "Кино, книги, картины, театр"
+    },
+    {
+      "slug": "music",
+      "name": "Музыка",
+      "icon": "music",
+      "description": "Инструменты, композиторы, жанры"
     },
     {
       "slug": "geo",
@@ -72,6 +78,90 @@
       "description": "Все штаты Соединённых Штатов Америки",
       "size": 50,
       "categories": ["geo"]
+    },
+    {
+      "slug": "strugatsky-works",
+      "name": "Произведения братьев Стругацких",
+      "description": "Романы и повести Аркадия и Бориса Стругацких",
+      "size": 26,
+      "categories": ["culture"]
+    },
+    {
+      "slug": "us-presidents",
+      "name": "Президенты США",
+      "description": "Главы исполнительной власти США с момента основания республики",
+      "size": 45,
+      "categories": ["history"]
+    },
+    {
+      "slug": "pirates",
+      "name": "Пираты",
+      "description": "Известные пираты истории, легенд и художественных произведений",
+      "size": 38,
+      "categories": ["history", "culture"]
+    },
+    {
+      "slug": "silver-age-poets",
+      "name": "Поэты Серебряного века",
+      "description": "Поэты русского Серебряного века — от символизма до советского авангарда",
+      "size": 53,
+      "categories": ["culture"]
+    },
+    {
+      "slug": "africa-countries",
+      "name": "Страны Африки",
+      "description": "Государства и территории Африканского континента",
+      "size": 55,
+      "categories": ["geo"]
+    },
+    {
+      "slug": "wind-instruments",
+      "name": "Духовые инструменты",
+      "description": "Духовые музыкальные инструменты разных стран и эпох",
+      "size": 57,
+      "categories": ["music"]
+    },
+    {
+      "slug": "80s-rock-bands",
+      "name": "Зарубежные рок-группы 80-х",
+      "description": "Культовые зарубежные рок-группы 1980-х годов",
+      "size": 28,
+      "categories": ["music"]
+    },
+    {
+      "slug": "chemical-metals",
+      "name": "Металлы",
+      "description": "Химические элементы — группа металлов",
+      "size": 72,
+      "categories": ["science", "reference"]
+    },
+    {
+      "slug": "renaissance-masters",
+      "name": "Мастера эпохи Возрождения",
+      "description": "Художники, скульпторы и архитекторы итальянского и северного Возрождения",
+      "size": 83,
+      "categories": ["culture"]
+    },
+    {
+      "slug": "fabric-types",
+      "name": "Виды тканей",
+      "description": "Ткани и текстильные материалы — от натуральных волокон до синтетики",
+      "size": 69,
+      "categories": ["reference"]
+    },
+    {
+      "slug": "slavic-deities",
+      "name": "Славянские божества",
+      "description": "Боги и богини славянского язычества по общепризнанным источникам",
+      "size": 27,
+      "categories": ["culture"]
+    },
+    {
+      "slug": "nobel-literature-laureates",
+      "name": "Нобелевские лауреаты по литературе",
+      "description": "Лауреаты Нобелевской премии по литературе с 1901 года",
+      "size": 122,
+      "categories": ["science", "culture"]
     }
   ]
 }

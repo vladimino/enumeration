@@ -1,0 +1,159 @@
+{
+  "answers": [
+    {
+      "text": "Анна Бонни",
+      "aliases": ["Anne Bonny", "Анна Бонни", "Бонни"]
+    },
+    {
+      "text": "Мэри Рид",
+      "aliases": ["Mary Read", "Мари Рид"]
+    },
+    {
+      "text": "Армандо Салазар",
+      "aliases": ["Armando Salazar", "Салазар"]
+    },
+    {
+      "text": "Арудж Барбаросса",
+      "aliases": ["Oruç Barbarossa", "Барбаросса", "Barbarossa"]
+    },
+    {"text": "Бармалей", "aliases": ["Barmaley"]},
+    {
+      "text": "Бартоломью Робертс",
+      "aliases": ["Bartholomew Roberts", "Чёрный Барт", "Черный Барт", "Black Bart"]
+    },
+    {
+      "text": "Гарри Пейджет Флэшмен",
+      "aliases": ["Harry Flashman", "Flashman", "Флэшмен"]
+    },
+    {
+      "text": "Гектор Барбосса",
+      "aliases": ["Hector Barbossa", "Барбосса", "Barbossa"]
+    },
+    {
+      "text": "Генри Морган",
+      "aliases": ["Henry Morgan", "Морган", "Morgan"]
+    },
+    {
+      "text": "Генри Эвери",
+      "aliases": ["Henry Every", "Долговязый Бен", "Long Ben"]
+    },
+    {
+      "text": "Джеймс Крюк",
+      "aliases": ["James Hook", "Капитан Крюк", "Captain Hook", "Крюк"]
+    },
+    {
+      "text": "Джек Воробей",
+      "aliases": ["Jack Sparrow", "Воробей", "Sparrow"]
+    },
+    {
+      "text": "Джек Рэкхем",
+      "aliases": ["Jack Rackham", "Калико Джек", "Calico Jack"]
+    },
+    {
+      "text": "Джон Сильвер",
+      "aliases": ["Long John Silver", "Длинный Джон Сильвер", "Сильвер"]
+    },
+    {
+      "text": "Джон Флинт",
+      "aliases": ["John Flint", "Капитан Флинт", "Captain Flint", "Флинт"]
+    },
+    {
+      "text": "Дирк Чиверс",
+      "aliases": ["Dirk Chivers", "Чиверс"]
+    },
+    {
+      "text": "Дэйви Джонс",
+      "aliases": ["Davy Jones", "Дэви Джонс"]
+    },
+    {
+      "text": "Жан Лафит",
+      "aliases": ["Jean Lafitte", "Lafitte", "Лафит"]
+    },
+    {
+      "text": "Капитан Гаторган",
+      "aliases": ["Captain Gavorgan", "Гаторган"]
+    },
+    {
+      "text": "Кристофер Конден",
+      "aliases": ["Christopher Condent", "Конден"]
+    },
+    {
+      "text": "Мадам Вонг",
+      "aliases": ["Madam Wong", "Madame Wong", "Вонг"]
+    },
+    {
+      "text": "Морган Адамс",
+      "aliases": ["Morgan Adams", "Адамс"]
+    },
+    {
+      "text": "Оливье Левассёр",
+      "aliases": ["Olivier Levasseur", "Ла Бюз", "La Buse", "Левассёр"]
+    },
+    {
+      "text": "Питер Блад",
+      "aliases": ["Peter Blood", "Капитан Блад", "Captain Blood", "Блад"]
+    },
+    {
+      "text": "Сэмюэль Беллами",
+      "aliases": ["Samuel Bellamy", "Беллами"]
+    },
+    {
+      "text": "Том Айртон",
+      "aliases": ["Tom Ayrton", "Айртон", "Ayrton"]
+    },
+    {
+      "text": "Томас Кавендиш",
+      "aliases": ["Thomas Cavendish", "Кавендиш"]
+    },
+    {
+      "text": "Уильям Дампир",
+      "aliases": ["William Dampier", "Дампир"]
+    },
+    {
+      "text": "Уильям Кидд",
+      "aliases": ["William Kidd", "Капитан Кидд", "Captain Kidd", "Кидд"]
+    },
+    {
+      "text": "Франсуа Л'Олоне",
+      "aliases": ["François l'Olonnais", "l'Olonnais", "Л'Олоне"]
+    },
+    {
+      "text": "Френсис Дрейк",
+      "aliases": ["Francis Drake", "Эль Драко", "El Draque", "Дрейк"]
+    },
+    {
+      "text": "Чарлз Вейн",
+      "aliases": ["Charles Vane", "Вейн"]
+    },
+    {
+      "text": "Чжэн Чэнгун",
+      "aliases": ["Zheng Chenggong", "Коксинг", "Koxinga", "Чэнгун"]
+    },
+    {
+      "text": "Чжэн Ши",
+      "aliases": ["Zheng Shi", "Госпожа Чжэн", "Чинг Ших", "Ching Shih", "Madame Cheng"]
+    },
+    {
+      "text": "Шарль Бонне",
+      "aliases": ["Charles Bonnet", "Бонне"]
+    },
+    {
+      "text": "Эдвард Инглэнд",
+      "aliases": ["Edward England", "Инглэнд"]
+    },
+    {
+      "text": "Эдвард Лау",
+      "aliases": ["Edward Low", "Лау"]
+    },
+    {
+      "text": "Эдвард Тич",
+      "aliases": [
+        "Edward Teach",
+        "Чёрная Борода",
+        "Черная Борода",
+        "Blackbeard",
+        "Тич"
+      ]
+    }
+  ]
+}

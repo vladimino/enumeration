@@ -1,0 +1,91 @@
+{
+  "answers": [
+    {"text": "Авлос", "aliases": ["aulos"]},
+    {"text": "Альтгорн", "aliases": ["alto horn"]},
+    {
+      "text": "Английский рожок",
+      "aliases": ["альтовый гобой", "English horn", "cor anglais"]
+    },
+    {
+      "text": "Балабан",
+      "aliases": ["баламан", "balaban", "balaman"]
+    },
+    {"text": "Бансури", "aliases": ["bansuri"]},
+    {"text": "Бассетгорн", "aliases": ["basset horn"]},
+    {"text": "Блокфлейта", "aliases": ["recorder", "blockflute"]},
+    {"text": "Бомбарда", "aliases": ["bombarde"]},
+    {"text": "Буцина", "aliases": ["buccina"]},
+    {
+      "text": "Валторна",
+      "aliases": ["French horn", "horn"]
+    },
+    {"text": "Волынка", "aliases": ["bagpipes", "bagpipe"]},
+    {"text": "Вувузела", "aliases": ["vuvuzela"]},
+    {"text": "Геликон", "aliases": ["helicon"]},
+    {"text": "Гобой", "aliases": ["oboe"]},
+    {"text": "Горн", "aliases": ["hunting horn"]},
+    {"text": "Диджериду", "aliases": ["didgeridoo"]},
+    {"text": "Дудка"},
+    {"text": "Дудук", "aliases": ["duduk"]},
+    {
+      "text": "Жалейка",
+      "aliases": ["брёлка", "брелка", "жаломейка", "zhaleika"]
+    },
+    {"text": "Зурна", "aliases": ["zurna"]},
+    {"text": "Кавал", "aliases": ["kaval"]},
+    {"text": "Казу", "aliases": ["kazoo"]},
+    {"text": "Карнай", "aliases": ["karnay", "karnai"]},
+    {"text": "Кларнет", "aliases": ["clarinet"]},
+    {"text": "Контрафагот", "aliases": ["contrabassoon"]},
+    {
+      "text": "Корнет",
+      "aliases": ["корнет-а-пистон", "cornet", "cornet à pistons"]
+    },
+    {"text": "Крумгорн", "aliases": ["krummhorn", "crumhorn"]},
+    {"text": "Кугиклы"},
+    {"text": "Курай"},
+    {"text": "Лур", "aliases": ["lur"]},
+    {"text": "Мелофон", "aliases": ["mellophone"]},
+    {
+      "text": "Най",
+      "aliases": ["ней", "ney", "nay"]
+    },
+    {"text": "Окарина", "aliases": ["ocarina"]},
+    {"text": "Орган", "aliases": ["organ"]},
+    {
+      "text": "Пыжатка",
+      "aliases": ["сопель", "посвистель", "одиночка", "пасвирелка"]
+    },
+    {"text": "Рожок"},
+    {"text": "Саксофон", "aliases": ["saxophone"]},
+    {"text": "Саксгорн", "aliases": ["saxhorn"]},
+    {"text": "Свирель", "aliases": ["svirel"]},
+    {"text": "Свисток", "aliases": ["whistle"]},
+    {"text": "Серпент", "aliases": ["serpent"]},
+    {"text": "Сиринга", "aliases": ["syrinx"]},
+    {
+      "text": "Сона",
+      "aliases": ["лаба", "suona"]
+    },
+    {"text": "Сопилка", "aliases": ["sopilka"]},
+    {"text": "Сузафон", "aliases": ["sousaphone"]},
+    {
+      "text": "Тилинка",
+      "aliases": ["теленка", "tilinka", "telenka"]
+    },
+    {"text": "Трембита", "aliases": ["trembita"]},
+    {"text": "Тромбон", "aliases": ["trombone"]},
+    {"text": "Труба", "aliases": ["trumpet"]},
+    {"text": "Туба", "aliases": ["tuba"]},
+    {"text": "Фагот", "aliases": ["bassoon"]},
+    {"text": "Фанфара", "aliases": ["fanfare trumpet"]},
+    {"text": "Флейта", "aliases": ["flute"]},
+    {
+      "text": "Флейта Пана",
+      "aliases": ["пан-флейта", "панфлейта", "Pan flute", "panpipes"]
+    },
+    {"text": "Чимпой", "aliases": ["chimpoy"]},
+    {"text": "Шофар", "aliases": ["shofar"]},
+    {"text": "Эуфониум", "aliases": ["euphonium"]}
+  ]
+}

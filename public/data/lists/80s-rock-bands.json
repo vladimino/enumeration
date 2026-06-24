@@ -1,0 +1,41 @@
+{
+  "answers": [
+    {"text": "Queen", "aliases": ["Квин"]},
+    {"text": "AC/DC", "aliases": ["ACDC"]},
+    {"text": "Bon Jovi", "aliases": ["Бон Джови"]},
+    {"text": "Metallica", "aliases": ["Металлика"]},
+    {
+      "text": "Guns N' Roses",
+      "aliases": ["Guns N Roses", "Guns and Roses", "GNR"]
+    },
+    {"text": "U2"},
+    {"text": "Iron Maiden", "aliases": ["Айрон Мейден"]},
+    {"text": "Def Leppard", "aliases": ["Def Lepard"]},
+    {"text": "Van Halen", "aliases": ["Ван Хален"]},
+    {"text": "Scorpions", "aliases": ["Скорпионс"]},
+    {"text": "Aerosmith", "aliases": ["Эйросмит"]},
+    {"text": "Judas Priest"},
+    {
+      "text": "Mötley Crüe",
+      "aliases": ["Motley Crue", "Mötley Crue", "Motley Crüe"]
+    },
+    {"text": "The Police", "aliases": ["Police"]},
+    {"text": "Dire Straits"},
+    {"text": "Depeche Mode", "aliases": ["Депеш Мод"]},
+    {"text": "The Cure", "aliases": ["Cure"]},
+    {"text": "R.E.M.", "aliases": ["REM", "R E M"]},
+    {"text": "Whitesnake", "aliases": ["Уайтснейк"]},
+    {"text": "Kiss", "aliases": ["Кисс"]},
+    {"text": "ZZ Top", "aliases": ["ZZTop"]},
+    {"text": "Journey"},
+    {"text": "Foreigner"},
+    {"text": "INXS", "aliases": ["In XS"]},
+    {"text": "Pixies"},
+    {"text": "Sonic Youth"},
+    {
+      "text": "Motörhead",
+      "aliases": ["Motorhead", "Моторхэд"]
+    },
+    {"text": "Skid Row"}
+  ]
+}
