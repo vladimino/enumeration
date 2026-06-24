@@ -3,11 +3,16 @@ import PropTypes from 'prop-types'
 import {Link, useParams} from 'react-router-dom'
 import {useProfile} from '../../context/ProfileContext'
 import {getListInCategory, loadFullList} from '../../lib/catalog'
-import {categoryPath, findCategoryBySlug} from '../../lib/categories'
+import {
+  categoryPath,
+  findCategoryBySlug,
+  itemCountLabel,
+} from '../../lib/categories'
 import {reviewAnswers} from '../../lib/answerMatching'
 import {hasIntroduced} from '../../lib/profileStorage'
 import {getListRecord} from '../../lib/profileProgress'
 import IntroduceModal from '../IntroduceModal/IntroduceModal'
+import Icon from '../ui/Icon'
 
 import './ListGame.css'
 
@@ -103,7 +108,7 @@ const ListGame = ({catalog, categories, isLoaded}) => {
     return <div>Loading...</div>
   }
 
-  const listTotal = list.answers?.length ?? 0
+  const listTotal = list.answers?.length ?? list.size ?? 0
   const listRecord = getListRecord(profile, listSlug)
 
   const addAnswer = () => {
@@ -159,11 +164,13 @@ const ListGame = ({catalog, categories, isLoaded}) => {
 
       <h1 className='ui header'>{list.name}</h1>
       {list.description && <p>{list.description}</p>}
-      {listRecord !== null && (
-        <p className='list-game__record'>
-          Твой текущий рекорд: <strong>{listRecord}</strong> из {listTotal}
-        </p>
-      )}
+      <div className='list-game__meta'>
+        <div className='list-game__size'>{itemCountLabel(listTotal)}</div>
+        <div className='list-game__record' title='Твой рекорд'>
+          <Icon name='trophy' />
+          <span>{listRecord ?? '—'}</span>
+        </div>
+      </div>
 
       {phase === 'playing' ? (
         <>

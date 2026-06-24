@@ -1,21 +1,12 @@
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
+import Icon from '../ui/Icon'
 import {itemCountLabel, listPath} from '../../lib/categories'
 import {getListRecord} from '../../lib/profileProgress'
 
 const ListCard = ({list, categorySlug, profile}) => {
   const record = getListRecord(profile, list.slug)
   const size = list.size ?? record?.total
-
-  const meta = size
-    ? `${itemCountLabel(size)} · ${
-        record !== null
-          ? `твой рекорд: ${record} из ${size}`
-          : 'рекорд пока нет'
-      }`
-    : record !== null
-      ? `твой рекорд: ${record}`
-      : 'рекорд пока нет'
 
   return (
     <div className='ui card category-list-card'>
@@ -26,7 +17,17 @@ const ListCard = ({list, categorySlug, profile}) => {
         {list.description && (
           <div className='description'>{list.description}</div>
         )}
-        <div className='meta'>{meta}</div>
+        <div className='meta category-list-card__meta'>
+          {size != null && (
+            <div className='category-list-card__size'>
+              {itemCountLabel(size)}
+            </div>
+          )}
+          <div className='category-list-card__record' title='Твой рекорд'>
+            <Icon name='trophy' />
+            <span>{record ?? '—'}</span>
+          </div>
+        </div>
       </div>
     </div>
   )

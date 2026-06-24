@@ -39,7 +39,39 @@
 
 .category-list-card > .content .meta {
   margin-top: auto;
+}
+
+.category-list-card > .content > .meta.category-list-card__meta {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.category-list-card__size {
   color: rgba(0, 0, 0, 0.55);
+}
+
+.category-list-card__record {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #c9961a;
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.category-list-card__record .icon {
+  margin: 0 !important;
+  width: 1em !important;
+  height: 1em !important;
+  font-size: 1em !important;
+  line-height: 1 !important;
+}
+
+.category-list-card__record > span {
+  font-size: 1em;
+  line-height: 1;
 }
 
 .category-list-card:hover,

@@ -76,7 +76,37 @@
   font-size: 1.1em;
 }
 
-.list-game__record {
+.list-game__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
   margin: 0 0 1em;
+  font-size: 1.15em;
+}
+
+.list-game__size {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.list-game__record {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #c9961a;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.list-game__record .icon {
+  margin: 0;
+  color: inherit;
+  font-size: 1em;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+}
+
+.list-game__record > span {
+  font-size: 1em;
+  line-height: 1;
 }
