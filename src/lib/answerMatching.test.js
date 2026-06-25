@@ -26,4 +26,44 @@ describe('reviewAnswers', () => {
     expect(result.missed).toEqual(['Нью-Йорк'])
     expect(result.score).toBe(1)
   })
+
+  it('accepts small typos in long answers', () => {
+    const cities = [
+      {text: 'Лос-Анджелес'},
+      {text: 'Кеннеди'},
+      {text: 'Йоханнесбург'},
+    ]
+    const result = reviewAnswers(
+      ['Лос-Анжелес', 'Кенеди', 'Йоханесбург'],
+      cities
+    )
+
+    expect(result.reviewed.map((item) => item.status)).toEqual([
+      'correct',
+      'correct',
+      'correct',
+    ])
+    expect(result.score).toBe(3)
+  })
+
+  it('does not fuzzy-match short strings', () => {
+    const acronyms = [{text: 'MCP'}, {text: 'API'}]
+    const result = reviewAnswers(['MVP'], acronyms)
+
+    expect(result.reviewed[0].status).toBe('incorrect')
+    expect(result.score).toBe(0)
+  })
+
+  it('prefers exact matches over fuzzy ones for the same slot', () => {
+    const items = [{text: 'Кеннеди'}]
+    const result = reviewAnswers(['Кенеди', 'Кеннеди'], items)
+
+    expect(result.reviewed[1]).toEqual({
+      text: 'Кеннеди',
+      status: 'correct',
+      canonical: 'Кеннеди',
+    })
+    expect(result.reviewed[0].status).toBe('incorrect')
+    expect(result.score).toBe(1)
+  })
 })

@@ -7,7 +7,7 @@
     {"text": "Эхо", "aliases": ["Echo"]},
     {"text": "Фокстрот", "aliases": ["Foxtrot"]},
     {"text": "Гольф", "aliases": ["Golf"]},
-    {"text": "Хотел", "aliases": ["Hotel"]},
+    {"text": "Хотел", "aliases": ["Hotel", "Хотэл", "Хотель", "Хотэль", "Отель"]},
     {"text": "Индия", "aliases": ["India"]},
     {"text": "Джульетт", "aliases": ["Juliet"]},
     {"text": "Кило", "aliases": ["Kilo"]},

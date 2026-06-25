@@ -6,7 +6,7 @@
     },
     {
       "text": "Мэри Рид",
-      "aliases": ["Mary Read", "Мари Рид"]
+      "aliases": ["Mary Read", "Мари Рид", "Рид"]
     },
     {
       "text": "Армандо Салазар",
@@ -35,7 +35,7 @@
     },
     {
       "text": "Генри Эвери",
-      "aliases": ["Henry Every", "Долговязый Бен", "Long Ben"]
+      "aliases": ["Henry Every", "Долговязый Бен", "Long Ben", "Эвери"]
     },
     {
       "text": "Джеймс Крюк",
@@ -43,11 +43,11 @@
     },
     {
       "text": "Джек Воробей",
-      "aliases": ["Jack Sparrow", "Воробей", "Sparrow"]
+      "aliases": ["Jack Sparrow", "Воробей", "Sparrow", "капитан Джек Воробей"]
     },
     {
       "text": "Джек Рэкхем",
-      "aliases": ["Jack Rackham", "Калико Джек", "Calico Jack"]
+      "aliases": ["Jack Rackham", "Калико Джек", "Calico Jack", "Рэкхем"]
     },
     {
       "text": "Джон Сильвер",
@@ -63,7 +63,7 @@
     },
     {
       "text": "Дэйви Джонс",
-      "aliases": ["Davy Jones", "Дэви Джонс"]
+      "aliases": ["Davy Jones", "Дэви Джонс", "Джонс"]
     },
     {
       "text": "Жан Лафит",
@@ -115,7 +115,7 @@
     },
     {
       "text": "Франсуа Л'Олоне",
-      "aliases": ["François l'Olonnais", "l'Olonnais", "Л'Олоне"]
+      "aliases": ["François l'Olonnais", "l'Olonnais", "Л'Олоне", "Л олоне"]
     },
     {
       "text": "Френсис Дрейк",
@@ -139,11 +139,11 @@
     },
     {
       "text": "Эдвард Инглэнд",
-      "aliases": ["Edward England", "Инглэнд"]
+      "aliases": ["Edward England", "Инглэнд", "Ингленд", "Эдвард Ингленд"]
     },
     {
       "text": "Эдвард Лау",
-      "aliases": ["Edward Low", "Лау"]
+      "aliases": ["Edward Low", "Лау", "Эдвард Лоу", "Лоу"]
     },
     {
       "text": "Эдвард Тич",
