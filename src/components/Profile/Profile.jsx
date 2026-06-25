@@ -110,18 +110,20 @@ const Profile = ({categories}) => {
             появится здесь.
           </p>
         ) : (
-          <table className='ui very basic table profile-page__table'>
+          <table className='ui very basic unstackable table profile-page__table profile-page__table--rank'>
             <thead>
               <tr>
+                <th className='profile-page__rank'>#</th>
                 <th>Категория</th>
                 <th>Очки</th>
               </tr>
             </thead>
             <tbody>
-              {categoryScores.map((entry) => (
+              {categoryScores.map((entry, index) => (
                 <tr key={entry.slug}>
-                  <td>{entry.name}</td>
-                  <td>{entry.score}</td>
+                  <td className='profile-page__rank'>{index + 1}</td>
+                  <td data-label='Категория'>{entry.name}</td>
+                  <td data-label='Очки'>{entry.score}</td>
                 </tr>
               ))}
             </tbody>
@@ -133,7 +135,7 @@ const Profile = ({categories}) => {
         <h2 className='ui sub header'>История игр</h2>
 
         {gameHistory.length ? (
-          <table className='ui very basic table profile-page__table'>
+          <table className='ui very basic unstackable table profile-page__table'>
             <thead>
               <tr>
                 <th>Дата</th>
@@ -145,10 +147,12 @@ const Profile = ({categories}) => {
             <tbody>
               {gameHistory.map((entry, index) => (
                 <tr key={`${entry.playedAt}-${entry.listSlug}-${index}`}>
-                  <td>{entry.playedAt}</td>
-                  <td>{entry.categoryName ?? entry.categorySlug}</td>
-                  <td>{entry.listName}</td>
-                  <td>{entry.score}</td>
+                  <td data-label='Дата'>{entry.playedAt}</td>
+                  <td data-label='Категория'>
+                    {entry.categoryName ?? entry.categorySlug}
+                  </td>
+                  <td data-label='Список'>{entry.listName}</td>
+                  <td data-label='Результат'>{entry.score}</td>
                 </tr>
               ))}
             </tbody>

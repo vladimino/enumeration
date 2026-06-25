@@ -58,3 +58,94 @@
 .profile-page__table {
   margin-top: 0 !important;
 }
+
+.profile-page__rank {
+  width: 3rem;
+  color: #767676;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 767px) {
+  .profile-page__table thead {
+    display: none;
+  }
+
+  .profile-page__table tbody,
+  .profile-page__table tr,
+  .profile-page__table td {
+    display: block;
+    width: 100%;
+  }
+
+  .profile-page__table tr {
+    border: 1px solid rgba(34, 36, 38, 0.12);
+    border-radius: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .profile-page__table tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-page__table td {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 0 !important;
+    border: none !important;
+    text-align: right;
+  }
+
+  .profile-page__table tbody tr td:not(:last-child) {
+    border-bottom: 1px solid rgba(34, 36, 38, 0.06) !important;
+  }
+
+  .profile-page__table td::before {
+    content: attr(data-label);
+    flex: 0 0 auto;
+    font-weight: 700;
+    color: #767676;
+    text-align: left;
+  }
+
+  .profile-page__table.profile-page__table--rank tr {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    border: none;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+    border-radius: 0;
+    padding: 0.7rem 0;
+    margin-bottom: 0;
+  }
+
+  .profile-page__table.profile-page__table--rank tr:last-child {
+    border-bottom: none;
+  }
+
+  .profile-page__table.profile-page__table--rank td {
+    display: block;
+    width: auto;
+    padding: 0 !important;
+    border: none !important;
+    text-align: left;
+  }
+
+  .profile-page__table.profile-page__table--rank td.profile-page__rank {
+    flex: 0 0 auto;
+    width: 1.5rem;
+  }
+
+  .profile-page__table.profile-page__table--rank td::before {
+    content: none;
+  }
+
+  .profile-page__table.profile-page__table--rank td:last-child {
+    margin-left: auto;
+    font-weight: 600;
+    text-align: right;
+  }
+}
