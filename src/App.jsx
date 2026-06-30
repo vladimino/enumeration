@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import MainMenu from './components/MainMenu'
 import {ProfileProvider} from './context/ProfileContext'
 import {getCategoriesWithLists, loadCatalog} from './lib/catalog'
+import './App.css'
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 
@@ -23,9 +24,11 @@ const App = () => {
   return (
     <ProfileProvider>
       <Router basename={basename}>
-        <MainMenu categories={categories} />
-        <Body catalog={catalog} categories={categories} isLoaded={isLoaded} />
-        <Footer />
+        <div className='app-layout'>
+          <MainMenu categories={categories} />
+          <Body catalog={catalog} categories={categories} isLoaded={isLoaded} />
+          <Footer />
+        </div>
       </Router>
     </ProfileProvider>
   )
