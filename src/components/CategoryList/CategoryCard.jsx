@@ -9,7 +9,7 @@ const CategoryCard = ({category}) => (
   <div className='ui card'>
     <div className='content'>
       <div className='header'>
-        <Icon name={category.icon} size='small' />
+        <Icon name={category.icon} size='small' className='category-icon' />
         <Link to={categoryPath(category.slug)}>{category.name}</Link>
       </div>
       <div className='description'>{category.description}</div>

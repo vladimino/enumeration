@@ -4,6 +4,7 @@ import Body from './components/Body'
 import Footer from './components/Footer'
 import MainMenu from './components/MainMenu'
 import {ProfileProvider} from './context/ProfileContext'
+import {ThemeProvider} from './context/ThemeContext'
 import {getCategoriesWithLists, loadCatalog} from './lib/catalog'
 import './App.css'
 
@@ -22,15 +23,21 @@ const App = () => {
   }, [])
 
   return (
-    <ProfileProvider>
-      <Router basename={basename}>
-        <div className='app-layout'>
-          <MainMenu categories={categories} />
-          <Body catalog={catalog} categories={categories} isLoaded={isLoaded} />
-          <Footer />
-        </div>
-      </Router>
-    </ProfileProvider>
+    <ThemeProvider>
+      <ProfileProvider>
+        <Router basename={basename}>
+          <div className='app-layout'>
+            <MainMenu categories={categories} />
+            <Body
+              catalog={catalog}
+              categories={categories}
+              isLoaded={isLoaded}
+            />
+            <Footer />
+          </div>
+        </Router>
+      </ProfileProvider>
+    </ThemeProvider>
   )
 }
 

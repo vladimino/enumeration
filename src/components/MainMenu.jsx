@@ -3,11 +3,13 @@ import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Icon from './ui/Icon'
 import {useProfile} from '../context/ProfileContext'
+import {useTheme} from '../context/ThemeContext'
 import {categoryPath} from '../lib/categories'
 import './MainMenu.css'
 
 const MainMenu = ({categories}) => {
   const {profile} = useProfile()
+  const {isDark, toggleTheme} = useTheme()
   const [categoriesOpen, setCategoriesOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef(null)
@@ -33,18 +35,28 @@ const MainMenu = ({categories}) => {
     setMenuOpen(false)
   }
 
+  const themeLabel = isDark ? 'Включить светлую тему' : 'Включить тёмную тему'
+
   const categoriesList = categories?.map((category) => (
     <div className='item' key={category.slug}>
-      <Link
-        to={categoryPath(category.slug)}
-        style={{color: '#000'}}
-        onClick={closeMenus}
-      >
-        <Icon name={category.icon} size='mini' />
+      <Link to={categoryPath(category.slug)} onClick={closeMenus}>
+        <Icon name={category.icon} size='mini' className='category-icon' />
         <span className='text'>{category.name}</span>
       </Link>
     </div>
   ))
+
+  const themeToggle = (extraClassName = '') => (
+    <button
+      type='button'
+      className={`item main-menu__theme-toggle${extraClassName ? ` ${extraClassName}` : ''}`}
+      onClick={toggleTheme}
+      aria-label={themeLabel}
+      title={themeLabel}
+    >
+      <Icon name={isDark ? 'sun' : 'moon'} />
+    </button>
+  )
 
   return (
     <div ref={menuRef} className='ui fixed top inverted menu main-menu'>
@@ -65,15 +77,18 @@ const MainMenu = ({categories}) => {
           </Link>
         </div>
 
-        <button
-          type='button'
-          className='item main-menu__toggle'
-          aria-label='Меню'
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <Icon name={menuOpen ? 'close' : 'bars'} />
-        </button>
+        <div className='main-menu__bar-actions'>
+          {themeToggle('main-menu__theme-toggle--bar')}
+          <button
+            type='button'
+            className='item main-menu__toggle'
+            aria-label='Меню'
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <Icon name={menuOpen ? 'close' : 'bars'} />
+          </button>
+        </div>
 
         <div
           className={`main-menu__items${menuOpen ? ' main-menu__items--open' : ''}`}
@@ -97,6 +112,7 @@ const MainMenu = ({categories}) => {
           </div>
 
           <div className='right menu'>
+            {themeToggle('main-menu__theme-toggle--menu')}
             <Link
               to='/profile'
               className={`item main-menu__profile${profile ? '' : ' main-menu__profile--loading'}`}

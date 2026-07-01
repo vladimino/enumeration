@@ -48,6 +48,7 @@
 .main-menu .ui.dropdown.item > .menu > .item > a {
   display: block;
   padding: 0.78571429em 1.14285714em;
+  color: #000;
 }
 
 .main-menu .ui.dropdown.item > .menu > .item > a:hover {
@@ -56,13 +57,11 @@
 
 .main-menu__profile {
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-radius: 0.28571429rem;
   margin-left: 0.5rem;
 }
 
 .main-menu__profile:hover {
-  background: rgba(255, 255, 255, 0.14) !important;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .main-menu__profile .icon {
@@ -71,6 +70,34 @@
 
 .main-menu__profile--loading {
   opacity: 0.7;
+}
+
+.main-menu__theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.main-menu__theme-toggle:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.main-menu__theme-toggle .icon {
+  margin: 0 !important;
+}
+
+.main-menu__theme-toggle--bar {
+  display: none !important;
+}
+
+.main-menu__theme-toggle--menu {
+  margin-right: 0.35rem;
+}
+
+.main-menu__bar-actions {
+  display: none;
 }
 
 .main-menu__items {
@@ -96,10 +123,26 @@
     letter-spacing: 0.08em;
   }
 
+  .main-menu__bar-actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto !important;
+    gap: 0.15rem;
+  }
+
+  .main-menu__theme-toggle--bar {
+    display: flex !important;
+    align-items: center;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .main-menu__theme-toggle--menu {
+    display: none !important;
+  }
+
   .main-menu__toggle {
     display: flex !important;
     align-items: center;
-    margin-left: auto !important;
   }
 
   .main-menu__toggle .icon {
@@ -143,7 +186,6 @@
   .main-menu__profile {
     margin: 0.5rem 1.25rem 0 !important;
     width: auto !important;
-    border-radius: 0.28571429rem;
     justify-content: center;
   }
 
@@ -172,6 +214,10 @@
   }
 
   .main-menu__items .ui.dropdown.item > .menu > .item > a {
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .main-menu__items .ui.dropdown.item > .menu .category-icon {
     color: rgba(255, 255, 255, 0.9) !important;
   }
 
