@@ -59,6 +59,15 @@
   margin-top: 0 !important;
 }
 
+.profile-page__table.ui.very.basic.table:not(.sortable):not(.striped)
+  thead
+  tr:first-child
+  > th {
+  padding-top: 0.78571429em !important;
+  padding-bottom: 0.78571429em !important;
+  vertical-align: middle !important;
+}
+
 .profile-page__rank {
   width: 3rem;
   color: #767676;

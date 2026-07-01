@@ -1,19 +1,25 @@
 import {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
-import Cookies from 'js-cookie'
 import Icon from '../ui/Icon'
+import {
+  dismissDisclaimer,
+  isDisclaimerDismissed,
+  migrateDisclaimerFromCookie,
+} from '../../lib/disclaimerStorage'
 
 const DisclaimerMessage = () => {
-  const [showMessage, setShowMessage] = useState(true)
+  const [showMessage, setShowMessage] = useState(() => !isDisclaimerDismissed())
 
   useEffect(() => {
-    if (Cookies.get('hide_disclaimer')) {
+    migrateDisclaimerFromCookie()
+
+    if (isDisclaimerDismissed()) {
       setShowMessage(false)
     }
   }, [])
 
   const handleClick = () => {
-    Cookies.set('hide_disclaimer', true)
+    dismissDisclaimer()
     setShowMessage(false)
   }
 

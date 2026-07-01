@@ -2,6 +2,7 @@ import {useEffect, useRef, useState} from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Icon from './ui/Icon'
+import {publicUrl} from '../lib/publicUrl'
 import {useProfile} from '../context/ProfileContext'
 import {useTheme} from '../context/ThemeContext'
 import {categoryPath} from '../lib/categories'
@@ -70,7 +71,7 @@ const MainMenu = ({categories}) => {
           >
             <img
               className='ui mini image main-menu__logo'
-              src={`${import.meta.env.BASE_URL}logo.png`}
+              src={publicUrl('logo.png')}
               alt='Enumeration'
             />
             <span className='main-menu__wordmark'>Enumeration</span>

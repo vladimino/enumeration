@@ -1,7 +1,8 @@
 import axios from 'axios'
+import {publicUrl} from './publicUrl'
 
-const catalogUrl = `${import.meta.env.BASE_URL}data/catalog.json`
-const listUrl = (slug) => `${import.meta.env.BASE_URL}data/lists/${slug}.json`
+const catalogUrl = publicUrl('data/catalog.json')
+const listUrl = (slug) => publicUrl(`data/lists/${slug}.json`)
 
 export const loadCatalog = () => axios.get(catalogUrl).then((res) => res.data)
 
