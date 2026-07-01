@@ -51,6 +51,17 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.category-list__cards.ui.stackable.cards {
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .category-list__cards.ui.stackable.cards > .card {
+    max-width: 22rem;
+    width: 100%;
+  }
+}
+
 .cards > ul {
   list-style: none;
 }

@@ -13,7 +13,7 @@ const CategoryCardGroup = ({categories, isLoaded}) => {
   }
 
   return (
-    <div className='ui three stackable cards'>
+    <div className='ui three stackable cards category-list__cards'>
       {categories.map((category) => (
         <CategoryCard category={category} key={category.slug} />
       ))}

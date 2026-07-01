@@ -156,11 +156,15 @@ const ListGame = ({catalog, categories, isLoaded}) => {
 
   return (
     <div className='list-game'>
-      <p>
-        <Link to={categoryPath(categorySlug)}>
-          ← Назад к категории{category ? ` «${category.name}»` : ''}
+      <div className='list-game__toolbar'>
+        <Link
+          to={categoryPath(categorySlug)}
+          className='list-game__btn list-game__btn--back'
+        >
+          <Icon name='arrow left' />
+          <span>Назад к категории{category ? ` «${category.name}»` : ''}</span>
         </Link>
-      </p>
+      </div>
 
       <h1 className='ui header'>{list.name}</h1>
       {list.description && <p>{list.description}</p>}
@@ -197,18 +201,25 @@ const ListGame = ({catalog, categories, isLoaded}) => {
                 onChange={(event) => setDraft(event.target.value)}
               />
             </div>
-            <button className='ui button' type='submit'>
-              Добавить
+            <button
+              className='ui primary button list-game__btn list-game__btn--add'
+              type='submit'
+            >
+              <Icon name='plus' />
+              <span>Добавить</span>
             </button>
           </form>
 
-          <button
-            className='ui huge primary fluid button list-game__finish'
-            type='button'
-            onClick={handleFinish}
-          >
-            Я закончил
-          </button>
+          <div className='list-game__finish-row'>
+            <button
+              className='list-game__btn list-game__btn--finish'
+              type='button'
+              onClick={handleFinish}
+            >
+              <Icon name='flag checkered' />
+              <span>Я закончил</span>
+            </button>
+          </div>
         </>
       ) : (
         <>

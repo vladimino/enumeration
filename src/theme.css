@@ -138,14 +138,48 @@ h5 {
   border-color: var(--border);
 }
 
-[data-theme='dark'] .ui.button {
+[data-theme='dark'] .ui.button:not(.primary):not(.positive) {
   background: var(--surface-muted);
   color: var(--text);
 }
 
-[data-theme='dark'] .ui.button:hover {
+[data-theme='dark'] .ui.button:not(.primary):not(.positive):hover {
   background: #35373a;
   color: var(--text);
+}
+
+[data-theme='dark'] .ui.primary.button {
+  background: #2185d0;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .ui.primary.button:hover {
+  background: #1678c2;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .list-game__btn--back {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.68);
+}
+
+[data-theme='dark'] .list-game__btn--back:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .list-game__btn--finish {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(84, 176, 255, 0.45);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+[data-theme='dark'] .list-game__btn--finish:hover {
+  background: rgba(84, 176, 255, 0.12);
+  border-color: rgba(84, 176, 255, 0.6);
+  color: #ffffff;
 }
 
 [data-theme='dark'] .ui.positive.button {
